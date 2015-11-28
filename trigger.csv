@@ -1,0 +1,1607 @@
+,entailScore,sentence1,sentence2
+0,0.0198,change,making 
+1,0.0198,change, separating 
+2,0.0198,change, applying
+3,0.25,change,ratio 
+4,0.25,change, presence 
+5,0.25,change, characteristic 
+6,0.25,change, dissolution 
+7,0.25,change, effect 
+8,0.25,change, chief 
+9,0.25,change, second 
+10,0.25,change, amount 
+11,0.25,change, weathering
+12,0.0,rising,context 
+13,0.0,rising, union 
+14,0.0,rising, base 
+15,0.0,rising, key 
+16,0.0,rising, tenant 
+17,0.0,rising, quantity
+18,0.0003,rising,temperature 
+19,0.0003,rising, reference 
+20,0.0003,rising, amount 
+21,0.0003,rising, creation 
+22,0.0003,rising, primary 
+23,0.0003,rising, rain 
+24,0.0003,rising, general 
+25,0.0003,rising, separating 
+26,0.0003,rising, deposition 
+27,0.0003,rising, site 
+28,0.0003,rising, difference
+29,0.0,rising,confusion 
+30,0.0,rising, energy 
+31,0.0,rising, governing 
+32,0.0,rising, evaporation 
+33,0.0,rising, reason 
+34,0.0,rising, heating up
+35,0.0,blend,theory 
+36,0.0,blend, advantage 
+37,0.0,blend, science 
+38,0.0,blend, second 
+39,0.0,blend, premise
+40,0.0,blend,tattooing 
+41,0.0,blend, use
+42,0.0,mowing,emotion 
+43,0.0,mowing, dynamic 
+44,0.0,mowing, way
+45,0.0,mowing,catalyst 
+46,0.0,mowing, basis
+47,0.0,tell,restoration
+48,0.0625,tell,resonating 
+49,0.0625,tell, direction 
+50,0.0625,tell, applying 
+51,0.0625,tell, oscillating 
+52,0.0625,tell, past 
+53,0.0625,tell, frequency 
+54,0.0625,tell, key 
+55,0.0625,tell, repeating
+56,0.0003,heated,making 
+57,0.0003,heated, separating 
+58,0.0003,heated, applying
+59,1.0,heated,confusion 
+60,1.0,heated, energy 
+61,1.0,heated, governing 
+62,1.0,heated, evaporation 
+63,1.0,heated, reason 
+64,1.0,heated, heating up
+65,0.1111,movement,existence 
+66,0.1111,movement, current 
+67,0.1111,movement, primary
+68,0.0,movement,story 
+69,0.0,movement, standard
+70,0.4628,change,information 
+71,0.4628,change, estimation 
+72,0.4628,change, applying 
+73,0.4628,change, ability 
+74,0.4628,change, taking 
+75,0.4628,change, rule 
+76,0.4628,change, portion 
+77,0.4628,change, future 
+78,0.4628,change, incorporated 
+79,0.4628,change, net 
+80,0.4628,change, law 
+81,0.4628,change, temperature
+82,0.0278,change,context 
+83,0.0278,change, union 
+84,0.0278,change, base 
+85,0.0278,change, key 
+86,0.0278,change, tenant 
+87,0.0278,change, quantity
+88,0.0625,change,temperature 
+89,0.0625,change, reference 
+90,0.0625,change, amount 
+91,0.0625,change, creation 
+92,0.0625,change, primary 
+93,0.0625,change, rain 
+94,0.0625,change, general 
+95,0.0625,change, separating 
+96,0.0625,change, deposition 
+97,0.0625,change, site 
+98,0.0625,change, difference
+99,1.0,change,confusion 
+100,1.0,change, energy 
+101,1.0,change, governing 
+102,1.0,change, evaporation 
+103,1.0,change, reason 
+104,1.0,change, heating up
+105,0.0142,turning,temperature 
+106,0.0142,turning, reference 
+107,0.0142,turning, amount 
+108,0.0142,turning, creation 
+109,0.0142,turning, primary 
+110,0.0142,turning, rain 
+111,0.0142,turning, general 
+112,0.0142,turning, separating 
+113,0.0142,turning, deposition 
+114,0.0142,turning, site 
+115,0.0142,turning, difference
+116,0.0,turning,context 
+117,0.0,turning, union 
+118,0.0,turning, base 
+119,0.0,turning, key 
+120,0.0,turning, tenant 
+121,0.0,turning, quantity
+122,0.0,turning,search 
+123,0.0,turning, cause 
+124,0.0,turning, goal 
+125,0.0,turning, offloading 
+126,0.0,turning, essence 
+127,0.0,turning, receipt 
+128,0.0,turning, storage 
+129,0.0,turning, keeping 
+130,0.0,turning, current 
+131,0.0,turning, second 
+132,0.0,turning, converted 
+133,0.0,turning, technology 
+134,0.0,turning, encoding 
+135,0.0,turning, software
+136,0.25,turning,confusion 
+137,0.25,turning, energy 
+138,0.25,turning, governing 
+139,0.25,turning, evaporation 
+140,0.25,turning, reason 
+141,0.25,turning, heating up
+142,1.0,made,collecting 
+143,1.0,made, right 
+144,1.0,made, trend 
+145,1.0,made, recycling 
+146,1.0,made, turned 
+147,1.0,made, total 
+148,1.0,made, placing 
+149,1.0,made, better 
+150,1.0,made, dismantling 
+151,1.0,made, split 
+152,1.0,made, utilizing 
+153,1.0,made, repurposed 
+154,1.0,made, turning 
+155,1.0,made, replacing 
+156,1.0,made, standard 
+157,1.0,made, law 
+158,1.0,made, recovering 
+159,1.0,made, taking 
+160,1.0,made, converted 
+161,1.0,made, processed 
+162,1.0,made, making
+163,0.0002,made,step
+164,0.0,following,second
+165,0.0,following,putting 
+166,0.0,following, name 
+167,0.0,following, fourth 
+168,0.0,following, time
+169,0.0012,following,field 
+170,0.0012,following, reason 
+171,0.0012,following, existence 
+172,0.0012,following, making 
+173,0.0012,following, condition
+174,0.0178,following,applying 
+175,0.0178,following, family 
+176,0.0178,following, transferring 
+177,0.0178,following, moving 
+178,0.0178,following, transporting 
+179,0.0178,following, key
+180,0.0,Burning,emotion 
+181,0.0,Burning, dynamic 
+182,0.0,Burning, way
+183,0.0,Burning,catalyst 
+184,0.0,Burning, basis
+185,0.0007,forms,baking 
+186,0.0007,forms, transforming 
+187,0.0007,forms, required 
+188,0.0007,forms, rate 
+189,0.0007,forms, limiting 
+190,0.0007,forms, amount 
+191,0.0007,forms, following 
+192,0.0007,forms, change
+193,0.0,forms,neutralization 
+194,0.0,forms, use 
+195,0.0,forms, inability 
+196,0.0,forms, key
+197,0.0,slows,claim 
+198,0.0,slows, premier 
+199,0.0,slows, high 
+200,0.0,slows, rate 
+201,0.0,slows, front 
+202,0.0,slows, world 
+203,0.0,slows, whole
+204,0.0,slows,gaining 
+205,0.0,slows, scene 
+206,0.0,slows, underlying 
+207,0.0,slows, base 
+208,0.0,slows, increasing 
+209,0.0,slows, cause
+210,0.0,slows,observer
+211,0.0,slows,engine 
+212,0.0,slows, magic 
+213,0.0,slows, flow 
+214,0.0,slows, test 
+215,0.0,slows, second 
+216,0.0,slows, following
+217,0.0,move,premier 
+218,0.0,move, recipient
+219,0.0816,move,right 
+220,0.0816,move, observer 
+221,0.0816,move, focus 
+222,0.0816,move, magnitude 
+223,0.0816,move, current 
+224,0.0816,move, second 
+225,0.0816,move, edge 
+226,0.0816,move, fourth 
+227,0.0816,move, starting
+228,0.0004,change,thread 
+229,0.0004,change, effect 
+230,0.0004,change, second 
+231,0.0004,change, fundamental 
+232,0.0004,change, erosion
+233,0.1341,change,adding 
+234,0.1341,change, problem 
+235,0.1341,change, duplicating 
+236,0.1341,change, extending
+237,1.0,change,right 
+238,1.0,change, presence 
+239,1.0,change, introduction 
+240,1.0,change, polluting 
+241,1.0,change, making 
+242,1.0,change, equilibrium
+243,0.0,characteristic,adapting 
+244,0.0,characteristic, altering 
+245,0.0,characteristic, taking 
+246,0.0,characteristic, second 
+247,0.0,characteristic, ensuring 
+248,0.0,characteristic, shifting 
+249,0.0,characteristic, adaptation 
+250,0.0,characteristic, key 
+251,0.0,characteristic, answer 
+252,0.0,characteristic, special
+253,0.0,characteristic,tattooing 
+254,0.0,characteristic, use
+255,0.0,called,current 
+256,0.0,called, culprit 
+257,0.0,called, sensitivity 
+258,0.0,called, relative 
+259,0.0,called, amount
+260,0.0,called,breaking down 
+261,0.0,called, transforming 
+262,0.0,called, releasing 
+263,0.0,called, obtaining 
+264,0.0,called, diffuses 
+265,0.0,called, common 
+266,0.0,called, making 
+267,0.0,called, contribution 
+268,0.0,called, producing 
+269,0.0,called, extracting
+270,0.0,called,confusion 
+271,0.0,called, energy 
+272,0.0,called, governing 
+273,0.0,called, evaporation 
+274,0.0,called, reason 
+275,0.0,called, heating up
+276,0.0,falls,leading 
+277,0.0,falls, man
+278,0.0,falls,second 
+279,0.0,falls, size
+280,0.0,something,adapting 
+281,0.0,something, altering 
+282,0.0,something, taking 
+283,0.0,something, second 
+284,0.0,something, ensuring 
+285,0.0,something, shifting 
+286,0.0,something, adaptation 
+287,0.0,something, key 
+288,0.0,something, answer 
+289,0.0,something, special
+290,0.0,something,emotion 
+291,0.0,something, dynamic 
+292,0.0,something, way
+293,0.0,something,tattooing 
+294,0.0,something, use
+295,0.0,beak,right 
+296,0.0,beak, removing 
+297,0.0,beak, obtaining 
+298,0.0,beak, source 
+299,0.0,beak, choosing
+300,0.0,movement,saving 
+301,0.0,movement, characteristic 
+302,0.0,movement, better 
+303,0.0,movement, using 
+304,0.0,movement, reduced 
+305,0.0,movement, procedure
+306,1.0,movement,impact 
+307,1.0,movement, right 
+308,1.0,movement, creating 
+309,1.0,movement, relocating 
+310,1.0,movement, investing 
+311,1.0,movement, transferring 
+312,1.0,movement, mapping 
+313,1.0,movement, surface 
+314,1.0,movement, installing 
+315,1.0,movement, second 
+316,1.0,movement, moving 
+317,1.0,movement, entering 
+318,1.0,movement, exporting 
+319,1.0,movement, world 
+320,1.0,movement, stirring 
+321,1.0,movement, making
+322,0.0069,destroys,impact 
+323,0.0069,destroys, premier 
+324,0.0069,destroys, driving 
+325,0.0069,destroys, determining 
+326,0.0069,destroys, practice 
+327,0.0069,destroys, key 
+328,0.0069,destroys, world 
+329,0.0069,destroys, contribution
+330,0.0069,destroys,continuation 
+331,0.0069,destroys, gravity 
+332,0.0069,destroys, potential 
+333,0.0069,destroys, determination 
+334,0.0069,destroys, key
+335,0.0,destroys,replacing 
+336,0.0,destroys, surface 
+337,0.0,destroys, observed 
+338,0.0,destroys, doctrine 
+339,0.0,destroys, article 
+340,0.0,destroys, problem 
+341,0.0,destroys, tolerance 
+342,0.0,destroys, change
+343,0.0,spinning,right
+344,0.0,spinning,imagining 
+345,0.0,spinning, angle 
+346,0.0,spinning, planting 
+347,0.0,spinning, practice 
+348,0.0,spinning, spectrum 
+349,0.0,spinning, height 
+350,0.0,spinning, allowing 
+351,0.0,spinning, fundamental 
+352,0.0,spinning, principal 
+353,0.0,spinning, quantity
+354,0.0,spinning,observer
+355,0.0,Babies,will 
+356,0.0,Babies, third
+357,0.0,movement,saving 
+358,0.0,movement, characteristic 
+359,0.0,movement, better 
+360,0.0,movement, using 
+361,0.0,movement, reduced 
+362,0.0,movement, procedure
+363,0.0016,movement,simplicity 
+364,0.0016,movement, partitioning 
+365,0.0016,movement, third 
+366,0.0016,movement, core 
+367,0.0016,movement, particular 
+368,0.0016,movement, resolving 
+369,0.0016,movement, method 
+370,0.0016,movement, decomposing 
+371,0.0016,movement, truth 
+372,0.0016,movement, wage 
+373,0.0016,movement, breaking down 
+374,0.0016,movement, order 
+375,0.0016,movement, unit
+376,1.0,movement,impact 
+377,1.0,movement, right 
+378,1.0,movement, creating 
+379,1.0,movement, relocating 
+380,1.0,movement, investing 
+381,1.0,movement, transferring 
+382,1.0,movement, mapping 
+383,1.0,movement, surface 
+384,1.0,movement, installing 
+385,1.0,movement, second 
+386,1.0,movement, moving 
+387,1.0,movement, entering 
+388,1.0,movement, exporting 
+389,1.0,movement, world 
+390,1.0,movement, stirring 
+391,1.0,movement, making
+392,1.0,movement,applying 
+393,1.0,movement, family 
+394,1.0,movement, transferring 
+395,1.0,movement, moving 
+396,1.0,movement, transporting 
+397,1.0,movement, key
+398,0.0079,movement,term 
+399,0.0079,movement, driving 
+400,0.0079,movement, primary 
+401,0.0079,movement, closing 
+402,0.0079,movement, diffuse
+403,0.0,movement,forcing 
+404,0.0,movement, diffuses 
+405,0.0,movement, premise
+406,0.0051,bending,considering 
+407,0.0051,bending, angle 
+408,0.0051,bending, inspecting 
+409,0.0051,bending, power 
+410,0.0051,bending, developing 
+411,0.0051,bending, uncovering 
+412,0.0051,bending, bouncing 
+413,0.0051,bending, turned 
+414,0.0051,bending, installing 
+415,0.0051,bending, other 
+416,0.0051,bending, key 
+417,0.0051,bending, line 
+418,0.0051,bending, assessment 
+419,0.0051,bending, fact
+420,0.0,bending,index 
+421,0.0,bending, determining 
+422,0.0,bending, negative 
+423,0.0,bending, general 
+424,0.0,bending, measuring 
+425,0.0,bending, principal
+426,0.0278,change,context 
+427,0.0278,change, union 
+428,0.0278,change, base 
+429,0.0278,change, key 
+430,0.0278,change, tenant 
+431,0.0278,change, quantity
+432,0.0625,change,temperature 
+433,0.0625,change, reference 
+434,0.0625,change, amount 
+435,0.0625,change, creation 
+436,0.0625,change, primary 
+437,0.0625,change, rain 
+438,0.0625,change, general 
+439,0.0625,change, separating 
+440,0.0625,change, deposition 
+441,0.0625,change, site 
+442,0.0625,change, difference
+443,1.0,change,confusion 
+444,1.0,change, energy 
+445,1.0,change, governing 
+446,1.0,change, evaporation 
+447,1.0,change, reason 
+448,1.0,change, heating up
+449,0.0,take,market
+450,0.0,take,fact
+451,0.0,making,pollination
+452,0.0,joining,pollination
+453,0.0,making,chef 
+454,0.0,making, sharing 
+455,0.0,making, organ 
+456,0.0,making, essence
+457,0.0,joining,chef 
+458,0.0,joining, sharing 
+459,0.0,joining, organ 
+460,0.0,joining, essence
+461,0.0,function,term 
+462,0.0,function, driving 
+463,0.0,function, primary 
+464,0.0,function, closing 
+465,0.0,function, diffuse
+466,0.0,function,removing 
+467,0.0,function, possibility 
+468,0.0,function, low 
+469,0.0,function, background 
+470,0.0,function, protecting 
+471,0.0,function, incorporating 
+472,0.0,function, performance 
+473,0.0,function, total 
+474,0.0,function, transport 
+475,0.0,function, movement
+476,0.8423,function,bridge 
+477,0.8423,function, technique 
+478,0.8423,function, goal 
+479,0.8423,function, feature
+480,0.0,function,forcing 
+481,0.0,function, diffuses 
+482,0.0,function, premise
+483,0.0,period,saving 
+484,0.0,period, characteristic 
+485,0.0,period, better 
+486,0.0,period, using 
+487,0.0,period, reduced 
+488,0.0,period, procedure
+489,0.0069,period,impact 
+490,0.0069,period, right 
+491,0.0069,period, creating 
+492,0.0069,period, relocating 
+493,0.0069,period, investing 
+494,0.0069,period, transferring 
+495,0.0069,period, mapping 
+496,0.0069,period, surface 
+497,0.0069,period, installing 
+498,0.0069,period, second 
+499,0.0069,period, moving 
+500,0.0069,period, entering 
+501,0.0069,period, exporting 
+502,0.0069,period, world 
+503,0.0069,period, stirring 
+504,0.0069,period, making
+505,0.0,period,tattooing 
+506,0.0,period, use
+507,0.0,corroding,emotion 
+508,0.0,corroding, dynamic 
+509,0.0,corroding, way
+510,0.0,corroding,catalyst 
+511,0.0,corroding, basis
+512,0.0,reaches,impact 
+513,0.0,reaches, characteristic 
+514,0.0,reaches, understanding 
+515,0.0,reaches, boundary 
+516,0.0,reaches, difference 
+517,0.0,reaches, parameter 
+518,0.0,reaches, problem
+519,0.0022,reaches,definition 
+520,0.0022,reaches, substance 
+521,0.0022,reaches, evolves 
+522,0.0022,reaches, amount 
+523,0.0022,reaches, sending off 
+524,0.0022,reaches, primary 
+525,0.0022,reaches, range 
+526,0.0022,reaches, limit 
+527,0.0022,reaches, evolved 
+528,0.0022,reaches, measure 
+529,0.0022,reaches, following 
+530,0.0022,reaches, emitting 
+531,0.0022,reaches, adapted 
+532,0.0022,reaches, unit
+533,0.0005,reaches,considering 
+534,0.0005,reaches, angle 
+535,0.0005,reaches, inspecting 
+536,0.0005,reaches, power 
+537,0.0005,reaches, developing 
+538,0.0005,reaches, uncovering 
+539,0.0005,reaches, bouncing 
+540,0.0005,reaches, turned 
+541,0.0005,reaches, installing 
+542,0.0005,reaches, other 
+543,0.0005,reaches, key 
+544,0.0005,reaches, line 
+545,0.0005,reaches, assessment 
+546,0.0005,reaches, fact
+547,0.0001,reaches,engine 
+548,0.0001,reaches, magic 
+549,0.0001,reaches, flow 
+550,0.0001,reaches, test 
+551,0.0001,reaches, second 
+552,0.0001,reaches, following
+553,0.0,bred,adapting 
+554,0.0,bred, altering 
+555,0.0,bred, taking 
+556,0.0,bred, second 
+557,0.0,bred, ensuring 
+558,0.0,bred, shifting 
+559,0.0,bred, adaptation 
+560,0.0,bred, key 
+561,0.0,bred, answer 
+562,0.0,bred, special
+563,0.0,mixing,emotion 
+564,0.0,mixing, dynamic 
+565,0.0,mixing, way
+566,0.0,mixing,catalyst 
+567,0.0,mixing, basis
+568,0.0272,position,claim 
+569,0.0272,position, premier 
+570,0.0272,position, high 
+571,0.0272,position, rate 
+572,0.0272,position, front 
+573,0.0272,position, world 
+574,0.0272,position, whole
+575,0.0,position,gaining 
+576,0.0,position, scene 
+577,0.0,position, underlying 
+578,0.0,position, base 
+579,0.0,position, increasing 
+580,0.0,position, cause
+581,0.0,position,observer
+582,0.0017,position,engine 
+583,0.0017,position, magic 
+584,0.0017,position, flow 
+585,0.0017,position, test 
+586,0.0017,position, second 
+587,0.0017,position, following
+588,0.0,path,imagining 
+589,0.0,path, angle 
+590,0.0,path, planting 
+591,0.0,path, practice 
+592,0.0,path, spectrum 
+593,0.0,path, height 
+594,0.0,path, allowing 
+595,0.0,path, fundamental 
+596,0.0,path, principal 
+597,0.0,path, quantity
+598,0.0,path,mining 
+599,0.0,path, supply
+600,0.0,bleaching,emotion 
+601,0.0,bleaching, dynamic 
+602,0.0,bleaching, way
+603,0.0,bleaching,catalyst 
+604,0.0,bleaching, basis
+605,0.0,developing,total 
+606,0.0,developing, standard
+607,0.0,developing,truth 
+608,0.0,developing, power 
+609,0.0,developing, fourth 
+610,0.0,developing, default 
+611,0.0,developing, third 
+612,0.0,developing, basis 
+613,0.0,developing, research 
+614,0.0,developing, recharging 
+615,0.0,developing, cost 
+616,0.0,developing, key 
+617,0.0,developing, removing
+618,0.0001,loses,dropping 
+619,0.0001,loses, operation 
+620,0.0001,loses, shutting down 
+621,0.0001,loses, tripping
+622,0.0,loses,use 
+623,0.0,loses, capacity 
+624,0.0,loses, result 
+625,0.0,loses, presence
+626,0.7663,change,claim 
+627,0.7663,change, premier 
+628,0.7663,change, high 
+629,0.7663,change, rate 
+630,0.7663,change, front 
+631,0.7663,change, world 
+632,0.7663,change, whole
+633,0.0,change,observer
+634,0.0,change,second
+635,0.031,change,putting 
+636,0.031,change, name 
+637,0.031,change, fourth 
+638,0.031,change, time
+639,0.0494,change,field 
+640,0.0494,change, reason 
+641,0.0494,change, existence 
+642,0.0494,change, making 
+643,0.0494,change, condition
+644,0.0059,change,city 
+645,0.0059,change, title 
+646,0.0059,change, top 
+647,0.0059,change, work 
+648,0.0059,change, effect
+649,0.0308,change,security 
+650,0.0308,change, denying 
+651,0.0308,change, freeze
+652,0.1458,moved,exploring 
+653,0.1458,moved, right 
+654,0.1458,moved, turning 
+655,0.1458,moved, creating 
+656,0.1458,moved, production 
+657,0.1458,moved, observing 
+658,0.1458,moved, public
+659,0.0,moved,observer
+660,0.0,wearing,continuation 
+661,0.0,wearing, gravity 
+662,0.0,wearing, potential 
+663,0.0,wearing, determination 
+664,0.0,wearing, key
+665,0.0,wearing,ratio 
+666,0.0,wearing, presence 
+667,0.0,wearing, characteristic 
+668,0.0,wearing, dissolution 
+669,0.0,wearing, effect 
+670,0.0,wearing, chief 
+671,0.0,wearing, second 
+672,0.0,wearing, amount 
+673,0.0,wearing, weathering
+674,0.0,transfer,existence 
+675,0.0,transfer, current 
+676,0.0,transfer, primary
+677,0.0,transfer,story 
+678,0.0,transfer, standard
+679,0.014,moves,continuation 
+680,0.014,moves, gravity 
+681,0.014,moves, potential 
+682,0.014,moves, determination 
+683,0.014,moves, key
+684,0.0156,moves,ratio 
+685,0.0156,moves, presence 
+686,0.0156,moves, characteristic 
+687,0.0156,moves, dissolution 
+688,0.0156,moves, effect 
+689,0.0156,moves, chief 
+690,0.0156,moves, second 
+691,0.0156,moves, amount 
+692,0.0156,moves, weathering
+693,0.0066,fall,context 
+694,0.0066,fall, union 
+695,0.0066,fall, base 
+696,0.0066,fall, key 
+697,0.0066,fall, tenant 
+698,0.0066,fall, quantity
+699,0.25,fall,temperature 
+700,0.25,fall, reference 
+701,0.25,fall, amount 
+702,0.25,fall, creation 
+703,0.25,fall, primary 
+704,0.25,fall, rain 
+705,0.25,fall, general 
+706,0.25,fall, separating 
+707,0.25,fall, deposition 
+708,0.25,fall, site 
+709,0.25,fall, difference
+710,0.0,fall,confusion 
+711,0.0,fall, energy 
+712,0.0,fall, governing 
+713,0.0,fall, evaporation 
+714,0.0,fall, reason 
+715,0.0,fall, heating up
+716,0.0,becomes,confusion 
+717,0.0,becomes, energy 
+718,0.0,becomes, governing 
+719,0.0,becomes, evaporation 
+720,0.0,becomes, reason 
+721,0.0,becomes, heating up
+722,0.0,becomes,context 
+723,0.0,becomes, union 
+724,0.0,becomes, base 
+725,0.0,becomes, key 
+726,0.0,becomes, tenant 
+727,0.0,becomes, quantity
+728,0.0,becomes,land 
+729,0.0,becomes, ratio 
+730,0.0,becomes, driving 
+731,0.0,becomes, determining 
+732,0.0,becomes, average 
+733,0.0,becomes, crop 
+734,0.0,becomes, bulk 
+735,0.0,becomes, answer 
+736,0.0,becomes, word 
+737,0.0,becomes, fact
+738,0.0142,becomes,current 
+739,0.0142,becomes, culprit 
+740,0.0142,becomes, sensitivity 
+741,0.0142,becomes, relative 
+742,0.0142,becomes, amount
+743,0.0,go,solution
+744,0.0025,go,core 
+745,0.0025,go, layer 
+746,0.0025,go, reference 
+747,0.0025,go, leading 
+748,0.0025,go, matter 
+749,0.0025,go, fact
+750,0.0,go,tattooing 
+751,0.0,go, use
+752,0.02,make,information 
+753,0.02,make, estimation 
+754,0.02,make, applying 
+755,0.02,make, ability 
+756,0.02,make, taking 
+757,0.02,make, rule 
+758,0.02,make, portion 
+759,0.02,make, future 
+760,0.02,make, incorporated 
+761,0.02,make, net 
+762,0.02,make, law 
+763,0.02,make, temperature
+764,0.1877,make,collecting 
+765,0.1877,make, acquiring 
+766,0.1877,make, point 
+767,0.1877,make, breaking 
+768,0.1877,make, building up 
+769,0.1877,make, key 
+770,0.1877,make, accumulating
+771,0.0295,make,leading 
+772,0.0295,make, man
+773,0.0,survive,adapting 
+774,0.0,survive, altering 
+775,0.0,survive, taking 
+776,0.0,survive, second 
+777,0.0,survive, ensuring 
+778,0.0,survive, shifting 
+779,0.0,survive, adaptation 
+780,0.0,survive, key 
+781,0.0,survive, answer 
+782,0.0,survive, special
+783,0.0,survive,driving 
+784,0.0,survive, altering 
+785,0.0,survive, primary 
+786,0.0,survive, changing 
+787,0.0,survive, accepting
+788,0.0,disguise,solution
+789,0.0,disguise,core 
+790,0.0,disguise, layer 
+791,0.0,disguise, reference 
+792,0.0,disguise, leading 
+793,0.0,disguise, matter 
+794,0.0,disguise, fact
+795,0.0,disguise,tattooing 
+796,0.0,disguise, use
+797,0.0514,produce,breaking down 
+798,0.0514,produce, third 
+799,0.0514,produce, reason 
+800,0.0514,produce, cutting 
+801,0.0514,produce, moving 
+802,0.0514,produce, result 
+803,0.0514,produce, combining 
+804,0.0514,produce, following 
+805,0.0514,produce, fact
+806,0.0266,produce,engine 
+807,0.0266,produce, circulation 
+808,0.0266,produce, driving 
+809,0.0266,produce, route 
+810,0.0266,produce, work 
+811,0.0266,produce, influence 
+812,0.0266,produce, pumping 
+813,0.0266,produce, drawing 
+814,0.0266,produce, converted 
+815,0.0266,produce, carrying 
+816,0.0266,produce, movement 
+817,0.0266,produce, bringing 
+818,0.0266,produce, reduced 
+819,0.0266,produce, mean
+820,0.0153,produce,field 
+821,0.0153,produce, reason 
+822,0.0153,produce, existence 
+823,0.0153,produce, making 
+824,0.0153,produce, condition
+825,0.0,breaking,tendency 
+826,0.0,breaking, fundamental 
+827,0.0,breaking, allowing
+828,0.0,breaking,continuation 
+829,0.0,breaking, gravity 
+830,0.0,breaking, potential 
+831,0.0,breaking, determination 
+832,0.0,breaking, key
+833,0.0,breaking,ratio 
+834,0.0,breaking, presence 
+835,0.0,breaking, characteristic 
+836,0.0,breaking, dissolution 
+837,0.0,breaking, effect 
+838,0.0,breaking, chief 
+839,0.0,breaking, second 
+840,0.0,breaking, amount 
+841,0.0,breaking, weathering
+842,0.0011,change,emotion 
+843,0.0011,change, dynamic 
+844,0.0011,change, way
+845,0.0,change,catalyst 
+846,0.0,change, basis
+847,0.0,movement,right
+848,0.0,movement,imagining 
+849,0.0,movement, angle 
+850,0.0,movement, planting 
+851,0.0,movement, practice 
+852,0.0,movement, spectrum 
+853,0.0,movement, height 
+854,0.0,movement, allowing 
+855,0.0,movement, fundamental 
+856,0.0,movement, principal 
+857,0.0,movement, quantity
+858,0.0,movement,observer
+859,1.0,convert,name 
+860,1.0,convert, primary 
+861,1.0,convert, expansion 
+862,1.0,convert, seat 
+863,1.0,convert, other 
+864,1.0,convert, converts 
+865,1.0,convert, converted
+866,0.0,convert,second
+867,0.0,convert,confusion 
+868,0.0,convert, energy 
+869,0.0,convert, governing 
+870,0.0,convert, evaporation 
+871,0.0,convert, reason 
+872,0.0,convert, heating up
+873,0.0,Offspring,chef 
+874,0.0,Offspring, sharing 
+875,0.0,Offspring, organ 
+876,0.0,Offspring, essence
+877,0.0,Select,emotion 
+878,0.0,Select, dynamic 
+879,0.0,Select, way
+880,0.0,Select,catalyst 
+881,0.0,Select, basis
+882,0.0,passes,right 
+883,0.0,passes, observer 
+884,0.0,passes, focus 
+885,0.0,passes, magnitude 
+886,0.0,passes, current 
+887,0.0,passes, second 
+888,0.0,passes, edge 
+889,0.0,passes, fourth 
+890,0.0,passes, starting
+891,0.0007,passes,considering 
+892,0.0007,passes, angle 
+893,0.0007,passes, inspecting 
+894,0.0007,passes, power 
+895,0.0007,passes, developing 
+896,0.0007,passes, uncovering 
+897,0.0007,passes, bouncing 
+898,0.0007,passes, turned 
+899,0.0007,passes, installing 
+900,0.0007,passes, other 
+901,0.0007,passes, key 
+902,0.0007,passes, line 
+903,0.0007,passes, assessment 
+904,0.0007,passes, fact
+905,0.0,forms,rate 
+906,0.0,forms, key
+907,0.0,forms,loss 
+908,0.0,forms, behavior
+909,0.0,exploding,emotion 
+910,0.0,exploding, dynamic 
+911,0.0,exploding, way
+912,0.0,exploding,catalyst 
+913,0.0,exploding, basis
+914,0.0,reproduction,rate 
+915,0.0,reproduction, key
+916,0.0,reproduction,chef 
+917,0.0,reproduction, sharing 
+918,0.0,reproduction, organ 
+919,0.0,reproduction, essence
+920,0.0,rub,observer
+921,0.0,rub,engine 
+922,0.0,rub, magic 
+923,0.0,rub, flow 
+924,0.0,rub, test 
+925,0.0,rub, second 
+926,0.0,rub, following
+927,0.0278,changes,context 
+928,0.0278,changes, union 
+929,0.0278,changes, base 
+930,0.0278,changes, key 
+931,0.0278,changes, tenant 
+932,0.0278,changes, quantity
+933,1.0,changes,confusion 
+934,1.0,changes, energy 
+935,1.0,changes, governing 
+936,1.0,changes, evaporation 
+937,1.0,changes, reason 
+938,1.0,changes, heating up
+939,0.0002,movement,context 
+940,0.0002,movement, union 
+941,0.0002,movement, base 
+942,0.0002,movement, key 
+943,0.0002,movement, tenant 
+944,0.0002,movement, quantity
+945,0.0,movement,confusion 
+946,0.0,movement, energy 
+947,0.0,movement, governing 
+948,0.0,movement, evaporation 
+949,0.0,movement, reason 
+950,0.0,movement, heating up
+951,1.0,bounces,considering 
+952,1.0,bounces, angle 
+953,1.0,bounces, inspecting 
+954,1.0,bounces, power 
+955,1.0,bounces, developing 
+956,1.0,bounces, uncovering 
+957,1.0,bounces, bouncing 
+958,1.0,bounces, turned 
+959,1.0,bounces, installing 
+960,1.0,bounces, other 
+961,1.0,bounces, key 
+962,1.0,bounces, line 
+963,1.0,bounces, assessment 
+964,1.0,bounces, fact
+965,0.0,bounces,index 
+966,0.0,bounces, determining 
+967,0.0,bounces, negative 
+968,0.0,bounces, general 
+969,0.0,bounces, measuring 
+970,0.0,bounces, principal
+971,0.0278,changing,context 
+972,0.0278,changing, union 
+973,0.0278,changing, base 
+974,0.0278,changing, key 
+975,0.0278,changing, tenant 
+976,0.0278,changing, quantity
+977,1.0,changing,search 
+978,1.0,changing, cause 
+979,1.0,changing, goal 
+980,1.0,changing, offloading 
+981,1.0,changing, essence 
+982,1.0,changing, receipt 
+983,1.0,changing, storage 
+984,1.0,changing, keeping 
+985,1.0,changing, current 
+986,1.0,changing, second 
+987,1.0,changing, converted 
+988,1.0,changing, technology 
+989,1.0,changing, encoding 
+990,1.0,changing, software
+991,1.0,changing,confusion 
+992,1.0,changing, energy 
+993,1.0,changing, governing 
+994,1.0,changing, evaporation 
+995,1.0,changing, reason 
+996,1.0,changing, heating up
+997,0.0001,helps,theory 
+998,0.0001,helps, advantage 
+999,0.0001,helps, science 
+1000,0.0001,helps, second 
+1001,0.0001,helps, premise
+1002,0.0001,helps,impact 
+1003,0.0001,helps, right 
+1004,0.0001,helps, creating 
+1005,0.0001,helps, relocating 
+1006,0.0001,helps, investing 
+1007,0.0001,helps, transferring 
+1008,0.0001,helps, mapping 
+1009,0.0001,helps, surface 
+1010,0.0001,helps, installing 
+1011,0.0001,helps, second 
+1012,0.0001,helps, moving 
+1013,0.0001,helps, entering 
+1014,0.0001,helps, exporting 
+1015,0.0001,helps, world 
+1016,0.0001,helps, stirring 
+1017,0.0001,helps, making
+1018,0.0,helps,tattooing 
+1019,0.0,helps, use
+1020,0.0142,turning,temperature 
+1021,0.0142,turning, reference 
+1022,0.0142,turning, amount 
+1023,0.0142,turning, creation 
+1024,0.0142,turning, primary 
+1025,0.0142,turning, rain 
+1026,0.0142,turning, general 
+1027,0.0142,turning, separating 
+1028,0.0142,turning, deposition 
+1029,0.0142,turning, site 
+1030,0.0142,turning, difference
+1031,0.0,turning,context 
+1032,0.0,turning, union 
+1033,0.0,turning, base 
+1034,0.0,turning, key 
+1035,0.0,turning, tenant 
+1036,0.0,turning, quantity
+1037,0.0,turning,search 
+1038,0.0,turning, cause 
+1039,0.0,turning, goal 
+1040,0.0,turning, offloading 
+1041,0.0,turning, essence 
+1042,0.0,turning, receipt 
+1043,0.0,turning, storage 
+1044,0.0,turning, keeping 
+1045,0.0,turning, current 
+1046,0.0,turning, second 
+1047,0.0,turning, converted 
+1048,0.0,turning, technology 
+1049,0.0,turning, encoding 
+1050,0.0,turning, software
+1051,0.25,turning,confusion 
+1052,0.25,turning, energy 
+1053,0.25,turning, governing 
+1054,0.25,turning, evaporation 
+1055,0.25,turning, reason 
+1056,0.25,turning, heating up
+1057,0.0,divide,rate 
+1058,0.0,divide, key
+1059,0.0,divide,truth 
+1060,0.0,divide, power 
+1061,0.0,divide, fourth 
+1062,0.0,divide, default 
+1063,0.0,divide, third 
+1064,0.0,divide, basis 
+1065,0.0,divide, research 
+1066,0.0,divide, recharging 
+1067,0.0,divide, cost 
+1068,0.0,divide, key 
+1069,0.0,divide, removing
+1070,0.0,spoiling,emotion 
+1071,0.0,spoiling, dynamic 
+1072,0.0,spoiling, way
+1073,0.0,spoiling,catalyst 
+1074,0.0,spoiling, basis
+1075,0.0001,saving,collecting 
+1076,0.0001,saving, right 
+1077,0.0001,saving, trend 
+1078,0.0001,saving, recycling 
+1079,0.0001,saving, turned 
+1080,0.0001,saving, total 
+1081,0.0001,saving, placing 
+1082,0.0001,saving, better 
+1083,0.0001,saving, dismantling 
+1084,0.0001,saving, split 
+1085,0.0001,saving, utilizing 
+1086,0.0001,saving, repurposed 
+1087,0.0001,saving, turning 
+1088,0.0001,saving, replacing 
+1089,0.0001,saving, standard 
+1090,0.0001,saving, law 
+1091,0.0001,saving, recovering 
+1092,0.0001,saving, taking 
+1093,0.0001,saving, converted 
+1094,0.0001,saving, processed 
+1095,0.0001,saving, making
+1096,0.0,saving,impact 
+1097,0.0,saving, premier 
+1098,0.0,saving, driving 
+1099,0.0,saving, determining 
+1100,0.0,saving, practice 
+1101,0.0,saving, key 
+1102,0.0,saving, world 
+1103,0.0,saving, contribution
+1104,0.0,saving,context 
+1105,0.0,saving, union 
+1106,0.0,saving, base 
+1107,0.0,saving, key 
+1108,0.0,saving, tenant 
+1109,0.0,saving, quantity
+1110,0.0293,saving,learning 
+1111,0.0293,saving, basis 
+1112,0.0293,saving, managing 
+1113,0.0293,saving, entering 
+1114,0.0293,saving, taking 
+1115,0.0293,saving, developing 
+1116,0.0293,saving, value 
+1117,0.0293,saving, turn 
+1118,0.0293,saving, other 
+1119,0.0293,saving, transformed 
+1120,0.0293,saving, key 
+1121,0.0293,saving, manipulating 
+1122,0.0293,saving, translated 
+1123,0.0293,saving, making 
+1124,0.0293,saving, creating
+1125,0.0159,change,putting 
+1126,0.0159,change, name 
+1127,0.0159,change, fourth 
+1128,0.0159,change, time
+1129,0.0159,life,putting 
+1130,0.0159,life, name 
+1131,0.0159,life, fourth 
+1132,0.0159,life, time
+1133,0.0,slow,removing 
+1134,0.0,slow, possibility 
+1135,0.0,slow, low 
+1136,0.0,slow, background 
+1137,0.0,slow, protecting 
+1138,0.0,slow, incorporating 
+1139,0.0,slow, performance 
+1140,0.0,slow, total 
+1141,0.0,slow, transport 
+1142,0.0,slow, movement
+1143,0.0,slow,region 
+1144,0.0,slow, broken 
+1145,0.0,slow, production 
+1146,0.0,slow, result 
+1147,0.0,slow, dilution 
+1148,0.0,slow, transformation
+1149,0.0,slow,continuation 
+1150,0.0,slow, gravity 
+1151,0.0,slow, potential 
+1152,0.0,slow, determination 
+1153,0.0,slow, key
+1154,0.0,slow,ratio 
+1155,0.0,slow, presence 
+1156,0.0,slow, characteristic 
+1157,0.0,slow, dissolution 
+1158,0.0,slow, effect 
+1159,0.0,slow, chief 
+1160,0.0,slow, second 
+1161,0.0,slow, amount 
+1162,0.0,slow, weathering
+1163,0.0278,change,continuation 
+1164,0.0278,change, gravity 
+1165,0.0278,change, potential 
+1166,0.0278,change, determination 
+1167,0.0278,change, key
+1168,0.0198,change,making 
+1169,0.0198,change, separating 
+1170,0.0198,change, applying
+1171,0.0,form,second
+1172,0.1451,form,sharing 
+1173,0.1451,form, leaf 
+1174,0.1451,form, engulfing 
+1175,0.1451,form, relationship 
+1176,0.1451,form, primary 
+1177,0.1451,form, version 
+1178,0.1451,form, contrary 
+1179,0.1451,form, generalized 
+1180,0.1451,form, way 
+1181,0.1451,form, world
+1182,0.1083,moves,imagining 
+1183,0.1083,moves, angle 
+1184,0.1083,moves, planting 
+1185,0.1083,moves, practice 
+1186,0.1083,moves, spectrum 
+1187,0.1083,moves, height 
+1188,0.1083,moves, allowing 
+1189,0.1083,moves, fundamental 
+1190,0.1083,moves, principal 
+1191,0.1083,moves, quantity
+1192,0.2336,moves,web 
+1193,0.2336,moves, revolution 
+1194,0.2336,moves, resocializing 
+1195,0.2336,moves, creating 
+1196,0.2336,moves, checking 
+1197,0.2336,moves, onset 
+1198,0.2336,moves, ideal 
+1199,0.2336,moves, teaching 
+1200,0.2336,moves, using 
+1201,0.2336,moves, answer 
+1202,0.2336,moves, changing
+1203,0.0,moves,velocity 
+1204,0.0,moves, brand 
+1205,0.0,moves, primary 
+1206,0.0,moves, advantage
+1207,0.1747,changing,definition 
+1208,0.1747,changing, applying 
+1209,0.1747,changing, leading 
+1210,0.1747,changing, transferring 
+1211,0.1747,changing, primary 
+1212,0.1747,changing, diversion 
+1213,0.1747,changing, printing 
+1214,0.1747,changing, converting
+1215,0.0278,changing,context 
+1216,0.0278,changing, union 
+1217,0.0278,changing, base 
+1218,0.0278,changing, key 
+1219,0.0278,changing, tenant 
+1220,0.0278,changing, quantity
+1221,1.0,changing,confusion 
+1222,1.0,changing, energy 
+1223,1.0,changing, governing 
+1224,1.0,changing, evaporation 
+1225,1.0,changing, reason 
+1226,1.0,changing, heating up
+1227,0.0351,keeps,origin 
+1228,0.0351,keeps, separation 
+1229,0.0351,keeps, study 
+1230,0.0351,keeps, rule 
+1231,0.0351,keeps, preceding 
+1232,0.0351,keeps, key 
+1233,0.0351,keeps, blocking
+1234,0.0,keeps,search 
+1235,0.0,keeps, property 
+1236,0.0,keeps, relationship 
+1237,0.0,keeps, dynamic 
+1238,0.0,keeps, effect 
+1239,0.0,keeps, resistance 
+1240,0.0,keeps, second 
+1241,0.0,keeps, verification 
+1242,0.0,keeps, law 
+1243,0.0,keeps, principal
+1244,0.0,keeps,observer
+1245,0.0,stored,losing
+1246,0.0,stored,second
+1247,0.0,stored,breaking down 
+1248,0.0,stored, transforming 
+1249,0.0,stored, releasing 
+1250,0.0,stored, obtaining 
+1251,0.0,stored, diffuses 
+1252,0.0,stored, common 
+1253,0.0,stored, making 
+1254,0.0,stored, contribution 
+1255,0.0,stored, producing 
+1256,0.0,stored, extracting
+1257,0.0,stored,land 
+1258,0.0,stored, ratio 
+1259,0.0,stored, driving 
+1260,0.0,stored, determining 
+1261,0.0,stored, average 
+1262,0.0,stored, crop 
+1263,0.0,stored, bulk 
+1264,0.0,stored, answer 
+1265,0.0,stored, word 
+1266,0.0,stored, fact
+1267,0.0,carpet,making 
+1268,0.0,carpet, fixing 
+1269,0.0,carpet, act
+1270,0.0,carpet,collecting 
+1271,0.0,carpet, right 
+1272,0.0,carpet, trend 
+1273,0.0,carpet, recycling 
+1274,0.0,carpet, turned 
+1275,0.0,carpet, total 
+1276,0.0,carpet, placing 
+1277,0.0,carpet, better 
+1278,0.0,carpet, dismantling 
+1279,0.0,carpet, split 
+1280,0.0,carpet, utilizing 
+1281,0.0,carpet, repurposed 
+1282,0.0,carpet, turning 
+1283,0.0,carpet, replacing 
+1284,0.0,carpet, standard 
+1285,0.0,carpet, law 
+1286,0.0,carpet, recovering 
+1287,0.0,carpet, taking 
+1288,0.0,carpet, converted 
+1289,0.0,carpet, processed 
+1290,0.0,carpet, making
+1291,0.0,giraffe,theory 
+1292,0.0,giraffe, advantage 
+1293,0.0,giraffe, science 
+1294,0.0,giraffe, second 
+1295,0.0,giraffe, premise
+1296,0.0,giraffe,adapting 
+1297,0.0,giraffe, altering 
+1298,0.0,giraffe, taking 
+1299,0.0,giraffe, second 
+1300,0.0,giraffe, ensuring 
+1301,0.0,giraffe, shifting 
+1302,0.0,giraffe, adaptation 
+1303,0.0,giraffe, key 
+1304,0.0,giraffe, answer 
+1305,0.0,giraffe, special
+1306,0.0,giraffe,tattooing 
+1307,0.0,giraffe, use
+1308,0.0,becoming,making 
+1309,0.0,becoming, separating 
+1310,0.0,becoming, applying
+1311,0.0,becoming,confusion 
+1312,0.0,becoming, energy 
+1313,0.0,becoming, governing 
+1314,0.0,becoming, evaporation 
+1315,0.0,becoming, reason 
+1316,0.0,becoming, heating up
+1317,0.0,becoming,processing
+1318,0.0005,pulls,claim 
+1319,0.0005,pulls, premier 
+1320,0.0005,pulls, high 
+1321,0.0005,pulls, rate 
+1322,0.0005,pulls, front 
+1323,0.0005,pulls, world 
+1324,0.0005,pulls, whole
+1325,0.0,pulls,gaining 
+1326,0.0,pulls, scene 
+1327,0.0,pulls, underlying 
+1328,0.0,pulls, base 
+1329,0.0,pulls, increasing 
+1330,0.0,pulls, cause
+1331,0.0,pulls,observer
+1332,0.0,pulls,engine 
+1333,0.0,pulls, magic 
+1334,0.0,pulls, flow 
+1335,0.0,pulls, test 
+1336,0.0,pulls, second 
+1337,0.0,pulls, following
+1338,0.0007,passes,considering 
+1339,0.0007,passes, angle 
+1340,0.0007,passes, inspecting 
+1341,0.0007,passes, power 
+1342,0.0007,passes, developing 
+1343,0.0007,passes, uncovering 
+1344,0.0007,passes, bouncing 
+1345,0.0007,passes, turned 
+1346,0.0007,passes, installing 
+1347,0.0007,passes, other 
+1348,0.0007,passes, key 
+1349,0.0007,passes, line 
+1350,0.0007,passes, assessment 
+1351,0.0007,passes, fact
+1352,0.0007,passes,index 
+1353,0.0007,passes, determining 
+1354,0.0007,passes, negative 
+1355,0.0007,passes, general 
+1356,0.0007,passes, measuring 
+1357,0.0007,passes, principal
+1358,0.0,strikes,claim 
+1359,0.0,strikes, premier 
+1360,0.0,strikes, high 
+1361,0.0,strikes, rate 
+1362,0.0,strikes, front 
+1363,0.0,strikes, world 
+1364,0.0,strikes, whole
+1365,0.0,strikes,market
+1366,0.0,squeezing,emotion 
+1367,0.0,squeezing, dynamic 
+1368,0.0,squeezing, way
+1369,0.0,squeezing,catalyst 
+1370,0.0,squeezing, basis
+1371,0.0,snake,heart 
+1372,0.0,snake, play 
+1373,0.0,snake, service 
+1374,0.0,snake, using 
+1375,0.0,snake, differing 
+1376,0.0,snake, child 
+1377,0.0,snake, world
+1378,0.0,snake,theory 
+1379,0.0,snake, advantage 
+1380,0.0,snake, science 
+1381,0.0,snake, second 
+1382,0.0,snake, premise
+1383,0.0,snake,tattooing 
+1384,0.0,snake, use
+1385,0.1246,change,good 
+1386,0.1246,change, nature 
+1387,0.1246,change, pushing 
+1388,0.1246,change, favorite 
+1389,0.1246,change, increase 
+1390,0.1246,change, minimum 
+1391,0.1246,change, converting 
+1392,0.1246,change, likelihood
+1393,0.1733,change,turned 
+1394,0.1733,change, heating 
+1395,0.1733,change, general 
+1396,0.1733,change, converted 
+1397,0.1733,change, using
+1398,1.0,change,term 
+1399,1.0,change, rise 
+1400,1.0,change, result 
+1401,1.0,change, changing 
+1402,1.0,change, increasing 
+1403,1.0,change, maintaining 
+1404,1.0,change, warming
+1405,1.0,change,solidified 
+1406,1.0,change, leaking out
+1407,0.0,spinning,imagining 
+1408,0.0,spinning, angle 
+1409,0.0,spinning, planting 
+1410,0.0,spinning, practice 
+1411,0.0,spinning, spectrum 
+1412,0.0,spinning, height 
+1413,0.0,spinning, allowing 
+1414,0.0,spinning, fundamental 
+1415,0.0,spinning, principal 
+1416,0.0,spinning, quantity
+1417,0.0061,spinning,web 
+1418,0.0061,spinning, revolution 
+1419,0.0061,spinning, resocializing 
+1420,0.0061,spinning, creating 
+1421,0.0061,spinning, checking 
+1422,0.0061,spinning, onset 
+1423,0.0061,spinning, ideal 
+1424,0.0061,spinning, teaching 
+1425,0.0061,spinning, using 
+1426,0.0061,spinning, answer 
+1427,0.0061,spinning, changing
+1428,0.0,spinning,mining 
+1429,0.0,spinning, supply
+1430,0.0266,combined,feature
+1431,0.0029,combined,breaking down 
+1432,0.0029,combined, product 
+1433,0.0029,combined, substance 
+1434,0.0029,combined, third 
+1435,0.0029,combined, basis 
+1436,0.0029,combined, turned 
+1437,0.0029,combined, term 
+1438,0.0029,combined, other 
+1439,0.0029,combined, mass 
+1440,0.0029,combined, mature 
+1441,0.0029,combined, total 
+1442,0.0029,combined, change
+1443,0.0,combined,problem 
+1444,0.0,combined, way
+1445,0.0,motion,observer
+1446,0.0727,motion,engine 
+1447,0.0727,motion, magic 
+1448,0.0727,motion, flow 
+1449,0.0727,motion, test 
+1450,0.0727,motion, second 
+1451,0.0727,motion, following
+1452,0.014,moving,continuation 
+1453,0.014,moving, gravity 
+1454,0.014,moving, potential 
+1455,0.014,moving, determination 
+1456,0.014,moving, key
+1457,0.0156,moving,ratio 
+1458,0.0156,moving, presence 
+1459,0.0156,moving, characteristic 
+1460,0.0156,moving, dissolution 
+1461,0.0156,moving, effect 
+1462,0.0156,moving, chief 
+1463,0.0156,moving, second 
+1464,0.0156,moving, amount 
+1465,0.0156,moving, weathering
+1466,0.0,travel,solution
+1467,0.0025,travel,core 
+1468,0.0025,travel, layer 
+1469,0.0025,travel, reference 
+1470,0.0025,travel, leading 
+1471,0.0025,travel, matter 
+1472,0.0025,travel, fact
+1473,0.0,travel,tattooing 
+1474,0.0,travel, use
+1475,0.0,adding,practice
+1476,0.0,adding,emphasis 
+1477,0.0,adding, fact 
+1478,0.0,adding, crop 
+1479,0.0,adding, standard
+1480,0.0947,adding,definition 
+1481,0.0947,adding, collecting 
+1482,0.0947,adding, union 
+1483,0.0947,adding, mechanism 
+1484,0.0947,adding, fertilizing 
+1485,0.0947,adding, injecting 
+1486,0.0947,adding, norm 
+1487,0.0947,adding, combining 
+1488,0.0947,adding, seeding 
+1489,0.0947,adding, joining
+1490,0.0,refers,imagining 
+1491,0.0,refers, angle 
+1492,0.0,refers, planting 
+1493,0.0,refers, practice 
+1494,0.0,refers, spectrum 
+1495,0.0,refers, height 
+1496,0.0,refers, allowing 
+1497,0.0,refers, fundamental 
+1498,0.0,refers, principal 
+1499,0.0,refers, quantity
+1500,0.0,refers,web 
+1501,0.0,refers, revolution 
+1502,0.0,refers, resocializing 
+1503,0.0,refers, creating 
+1504,0.0,refers, checking 
+1505,0.0,refers, onset 
+1506,0.0,refers, ideal 
+1507,0.0,refers, teaching 
+1508,0.0,refers, using 
+1509,0.0,refers, answer 
+1510,0.0,refers, changing
+1511,1.0,refers,temperature 
+1512,1.0,refers, reference 
+1513,1.0,refers, amount 
+1514,1.0,refers, creation 
+1515,1.0,refers, primary 
+1516,1.0,refers, rain 
+1517,1.0,refers, general 
+1518,1.0,refers, separating 
+1519,1.0,refers, deposition 
+1520,1.0,refers, site 
+1521,1.0,refers, difference
+1522,0.0,help,characteristic
+1523,0.0,help,land 
+1524,0.0,help, ratio 
+1525,0.0,help, driving 
+1526,0.0,help, determining 
+1527,0.0,help, average 
+1528,0.0,help, crop 
+1529,0.0,help, bulk 
+1530,0.0,help, answer 
+1531,0.0,help, word 
+1532,0.0,help, fact
+1533,0.0,help,applying 
+1534,0.0,help, family 
+1535,0.0,help, transferring 
+1536,0.0,help, moving 
+1537,0.0,help, transporting 
+1538,0.0,help, key
+1539,0.0,help,definition 
+1540,0.0,help, collecting 
+1541,0.0,help, union 
+1542,0.0,help, mechanism 
+1543,0.0,help, fertilizing 
+1544,0.0,help, injecting 
+1545,0.0,help, norm 
+1546,0.0,help, combining 
+1547,0.0,help, seeding 
+1548,0.0,help, joining
+1549,0.0,call,saving 
+1550,0.0,call, characteristic 
+1551,0.0,call, better 
+1552,0.0,call, using 
+1553,0.0,call, reduced 
+1554,0.0,call, procedure
+1555,0.0007,call,impact 
+1556,0.0007,call, right 
+1557,0.0007,call, creating 
+1558,0.0007,call, relocating 
+1559,0.0007,call, investing 
+1560,0.0007,call, transferring 
+1561,0.0007,call, mapping 
+1562,0.0007,call, surface 
+1563,0.0007,call, installing 
+1564,0.0007,call, second 
+1565,0.0007,call, moving 
+1566,0.0007,call, entering 
+1567,0.0007,call, exporting 
+1568,0.0007,call, world 
+1569,0.0007,call, stirring 
+1570,0.0007,call, making
+1571,0.7663,change,claim 
+1572,0.7663,change, premier 
+1573,0.7663,change, high 
+1574,0.7663,change, rate 
+1575,0.7663,change, front 
+1576,0.7663,change, world 
+1577,0.7663,change, whole
+1578,0.6243,change,using 
+1579,0.6243,change, filling 
+1580,0.6243,change, swishing 
+1581,0.6243,change, expanding
+1582,0.0,adaptation,theory 
+1583,0.0,adaptation, advantage 
+1584,0.0,adaptation, science 
+1585,0.0,adaptation, second 
+1586,0.0,adaptation, premise
+1587,0.0,adaptation,tattooing 
+1588,0.0,adaptation, use
+1589,0.0,burning,emotion 
+1590,0.0,burning, dynamic 
+1591,0.0,burning, way
+1592,0.0,burning,catalyst 
+1593,0.0,burning, basis
+1594,0.0278,change,resonating 
+1595,0.0278,change, direction 
+1596,0.0278,change, applying 
+1597,0.0278,change, oscillating 
+1598,0.0278,change, past 
+1599,0.0278,change, frequency 
+1600,0.0278,change, key 
+1601,0.0278,change, repeating
+1602,0.031,change,putting 
+1603,0.031,change, name 
+1604,0.031,change, fourth 
+1605,0.031,change, time

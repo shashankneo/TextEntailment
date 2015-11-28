@@ -1,0 +1,323 @@
+,entailScore,sentence1,sentence2
+0,0.2083,bleaching your hair ,"A change in the physical state of a molecule, object, wave or system."
+1,0.2083,bleaching your hair ,"A change at the molecular, atomic or subcellular level in an organism."
+2,0.0,bleaching your hair ,"Chemical reactions can be either spontaneous, requiring no input of energy, or non-spontaneous, typically following the input of some type of energy, such as heat, light or electricity"
+3,0.0448,bleaching your hair ,"Chemical reactions are usually characterized by a chemical change, and they yield one or more products, which usually have properties different from the reactants"
+4,0.0,bleaching your hair ,"Chemical changes occur when a substance combines with another to form a new substance, called synthesis or, alternatively, decomposes into two or more different substances"
+5,0.0,bleaching your hair ,A chemical reaction is a process in which one or more substances are converted into other substances.
+6,0.098,bleaching your hair ,A physical change involves a change in physical properties
+7,0.098,bleaching your hair ,Physical changes occur when objects or substances undergo a change that does not change their chemical composition
+8,0.098,bleaching your hair ,"Physical changes are used to separate mixtures into their component compounds, but can not usually be used to separate compounds into chemical elements or simpler compounds."
+9,0.098,bleaching your hair ,"Physical changes are changes affecting the form of a chemical substance, but not its chemical composition."
+10,0.0256,Burning a match is a ,"A change in the physical state of a molecule, object, wave or system."
+11,0.0256,Burning a match is a ,"A change at the molecular, atomic or subcellular level in an organism."
+12,0.0,Burning a match is a ,"Chemical reactions can be either spontaneous, requiring no input of energy, or non-spontaneous, typically following the input of some type of energy, such as heat, light or electricity"
+13,0.0055,Burning a match is a ,"Chemical reactions are usually characterized by a chemical change, and they yield one or more products, which usually have properties different from the reactants"
+14,0.0,Burning a match is a ,"Chemical changes occur when a substance combines with another to form a new substance, called synthesis or, alternatively, decomposes into two or more different substances"
+15,0.0,Burning a match is a ,A chemical reaction is a process in which one or more substances are converted into other substances.
+16,0.012,Burning a match is a ,A physical change involves a change in physical properties
+17,0.012,Burning a match is a ,Physical changes occur when objects or substances undergo a change that does not change their chemical composition
+18,0.012,Burning a match is a ,"Physical changes are used to separate mixtures into their component compounds, but can not usually be used to separate compounds into chemical elements or simpler compounds."
+19,0.012,Burning a match is a ,"Physical changes are changes affecting the form of a chemical substance, but not its chemical composition."
+20,0.6667,corroding metal ,"A change in the physical state of a molecule, object, wave or system."
+21,0.6667,corroding metal ,"A change at the molecular, atomic or subcellular level in an organism."
+22,0.0,corroding metal ,"Chemical reactions can be either spontaneous, requiring no input of energy, or non-spontaneous, typically following the input of some type of energy, such as heat, light or electricity"
+23,0.1433,corroding metal ,"Chemical reactions are usually characterized by a chemical change, and they yield one or more products, which usually have properties different from the reactants"
+24,0.0,corroding metal ,"Chemical changes occur when a substance combines with another to form a new substance, called synthesis or, alternatively, decomposes into two or more different substances"
+25,0.0,corroding metal ,A chemical reaction is a process in which one or more substances are converted into other substances.
+26,0.3137,corroding metal ,A physical change involves a change in physical properties
+27,0.3137,corroding metal ,Physical changes occur when objects or substances undergo a change that does not change their chemical composition
+28,0.3137,corroding metal ,"Physical changes are used to separate mixtures into their component compounds, but can not usually be used to separate compounds into chemical elements or simpler compounds."
+29,0.3137,corroding metal ,"Physical changes are changes affecting the form of a chemical substance, but not its chemical composition."
+30,0.5216,fireworks exploding ,"A change in the physical state of a molecule, object, wave or system."
+31,0.5216,fireworks exploding ,"A change at the molecular, atomic or subcellular level in an organism."
+32,0.0,fireworks exploding ,"Chemical reactions can be either spontaneous, requiring no input of energy, or non-spontaneous, typically following the input of some type of energy, such as heat, light or electricity"
+33,0.1121,fireworks exploding ,"Chemical reactions are usually characterized by a chemical change, and they yield one or more products, which usually have properties different from the reactants"
+34,0.0,fireworks exploding ,"Chemical changes occur when a substance combines with another to form a new substance, called synthesis or, alternatively, decomposes into two or more different substances"
+35,0.0,fireworks exploding ,A chemical reaction is a process in which one or more substances are converted into other substances.
+36,0.2454,fireworks exploding ,A physical change involves a change in physical properties
+37,0.2454,fireworks exploding ,Physical changes occur when objects or substances undergo a change that does not change their chemical composition
+38,0.2454,fireworks exploding ,"Physical changes are used to separate mixtures into their component compounds, but can not usually be used to separate compounds into chemical elements or simpler compounds."
+39,0.2454,fireworks exploding ,"Physical changes are changes affecting the form of a chemical substance, but not its chemical composition."
+40,1.0,fireworks exploding ,"Physical changes are changes affecting the form of a chemical substance, but not its chemical composition."
+41,0.0,fireworks exploding ,"A change in the physical state of a molecule, object, wave or system."
+42,0.5318,fireworks exploding ,Physical changes occur when objects or substances undergo a change that does not change their chemical composition
+43,0.3503,fireworks exploding ,A chemical reaction is a process in which one or more substances are converted into other substances.
+44,0.0,fireworks exploding ,"A change at the molecular, atomic or subcellular level in an organism."
+45,1.0,fireworks exploding ,"Chemical changes occur when a substance combines with another to form a new substance, called synthesis or, alternatively, decomposes into two or more different substances"
+46,1.0,A giraffe's long neck is a(n) ,A primary defense against predators throughout the animal kingdom (and against the enemy during human warfare) is to avoid detection or recognition through camouflage
+47,0.3478,A giraffe's long neck is a(n) ,"Something, that makes an animal, person, building etc. difficult for enemies to see."
+48,1.0,A giraffe's long neck is a(n) ,The last method of camouflage animals might use is called mimicry.
+49,1.0,A giraffe's long neck is a(n) ,"Animals use concealing or disruptive coloration, disguise, and mimicry to protect themselves."
+50,1.0,A giraffe's long neck is a(n) ,The adaptation of animals are the features an animal has to live in their environment.
+51,1.0,A giraffe's long neck is a(n) ,Some animals use camouflage to hide from their enemies.
+52,1.0,A giraffe's long neck is a(n) ,Most animals of the open sea use at least one of these methods to camouflage themselves.
+53,1.0,A giraffe's long neck is a(n) ,Prey animals often use camouflage to hide from predators.
+54,1.0,A giraffe's long neck is a(n) ,There are four basic ways animals camouflage themselves.
+55,1.0,A giraffe's long neck is a(n) ,Animals that change color or are of a color similar to their environment can camouflage themselves so that they cannot be easily seen.
+56,1.0,A giraffe's long neck is a(n) ,Camouflage is an adaptation that helps many animals avoid detection by predators or prey because it allows them to blend in to their natural environments.
+57,0.3694,A giraffe's long neck is a(n) ,An example of animals that uses both aggressive and defensive camouflage is octopuses.
+58,0.5053,A giraffe's long neck is a(n) ,Animals and plants are adapted to the conditions of the habitats in which they live.
+59,0.0,A giraffe's long neck is a(n) ,Other flowers use mimicry to attract pollinators.
+60,0.0,A giraffe's long neck is a(n) ,The leopard's camouflage makes it blend in with the forest shadows.
+61,1.0,A giraffe's long neck is a(n) ,The resemblance of one organism to another or to an object in its surroundings for concealment and protection from predators.
+62,1.0,A giraffe's long neck is a(n) ,Inherited characteristic of an organism that enhances its survival and reproduction in specific environments.
+63,0.0,A giraffe's long neck is a(n) ,Even well watered plants may wilt if the plant cannot adapt it transpiration rate.
+64,0.5053,A giraffe's long neck is a(n) ,Plants and animals have adapted to changes in the environment for millions of years.
+65,0.0,A giraffe's long neck is a(n) ,"Predators may also use mimicry to lure their prey, however."
+66,0.0,A giraffe's long neck is a(n) ,Rabbits use their white fur as camouflage in the snow.
+67,0.0,A giraffe's long neck is a(n) ,Structural adaptation that enables species to blend with their surroundings
+68,0.0,bleaching your hair ,"Physical changes are changes affecting the form of a chemical substance, but not its chemical composition."
+69,0.2095,bleaching your hair ,"A change in the physical state of a molecule, object, wave or system."
+70,0.4123,bleaching your hair ,Physical changes occur when objects or substances undergo a change that does not change their chemical composition
+71,0.0,bleaching your hair ,A chemical reaction is a process in which one or more substances are converted into other substances.
+72,0.0,bleaching your hair ,"A change at the molecular, atomic or subcellular level in an organism."
+73,0.0,bleaching your hair ,"Chemical changes occur when a substance combines with another to form a new substance, called synthesis or, alternatively, decomposes into two or more different substances"
+74,0.1733,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The change of a liquid into a vapor at a temperature below the boiling point.
+75,0.0374,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The change of state from water to water vapor is called evaporation.
+76,0.0563,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The energy from the sun heated the water and caused it to evaporate - change from liquid water to water vapor.
+77,0.1733,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ","The changing of a liquid into a gas, often under the influence of heat (as in the boiling of water)."
+78,0.0585,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Liquid water changing to water vapor is evaporation.
+79,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",condensation is the process in which water vapor in the air is changed into liquid water.
+80,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Water drops on the outside of a cold glass of water are condensed water.
+81,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The water in a cloud comes from water vapor in the air that has condensed.
+82,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The condensed water molecules form liquid water droplets.
+83,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Water vapour condenses to liquid water.
+84,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ","Essential oils evaporate readily and are easily damaged by light, extremes of temperature and prolonged exposure to oxygen in the air."
+85,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Surface water is evaporated from the earth by the energy of the sun.
+86,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The water evaporated back into water vapor in the air.
+87,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Water evaporates as water vapor into the air.
+88,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Clouds get their water from evaporation.
+89,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Water from the oceans enters the atmosphere through evaporation.
+90,0.0585,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Evaporation and condensation are two processes through which matter changes from one state to another.
+91,0.0585,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ","In evaporation, matter changes from a liquid to a gas."
+92,0.0585,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Evaporation involves changing water from its liquid state to a gaseous state (vapor)
+93,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",evaporation - the process of extracting moisture
+94,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Evaporation is a type of vaporization of a liquid that occurs from the surface of a liquid into a gaseous phase that is not saturated with the evaporating substance.
+95,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The liquid and solid water particles that fall from clouds and reach the ground are known as precipitation
+96,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Different forms of precipitation include: Rain is liquid water falling from the sky.
+97,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ","falling products of condensation of water vapour in the atmosphere, as rain, snow, or hail."
+98,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",precipitation Water that falls to the Earth from the sky.
+99,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Precipitation is the term used to describe water (moisture) that falls from the sky.
+100,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",precipitation is any product of the condensation of atmospheric water vapour that falls under gravity.
+101,0.0781,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Condensation is defined as the phase change from gas (vapor) to liquid.
+102,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ","Also when the air cannot hold any more water, it precipitates."
+103,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The plant will then use the stored water in times or seasons of low precipitation.
+104,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",precipitation Water falling to the Earth.
+105,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Rain is a form of precipitation in which water falls back to earth as a liquid.
+106,0.0585,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Evaporation is the process of a substance in a liquid state changing to a gaseous state due to an increase in temperature and/or pressure.
+107,0.0585,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The process of liquid water changing into water vapor is called evaporation.
+108,0.6304,mixing lemonade powder into water ,"Physical changes are changes affecting the form of a chemical substance, but not its chemical composition."
+109,0.0004,mixing lemonade powder into water ,"A change in the physical state of a molecule, object, wave or system."
+110,0.5615,mixing lemonade powder into water ,Physical changes occur when objects or substances undergo a change that does not change their chemical composition
+111,0.7007,mixing lemonade powder into water ,A chemical reaction is a process in which one or more substances are converted into other substances.
+112,0.0,mixing lemonade powder into water ,"A change at the molecular, atomic or subcellular level in an organism."
+113,2.0,mixing lemonade powder into water ,"Chemical changes occur when a substance combines with another to form a new substance, called synthesis or, alternatively, decomposes into two or more different substances"
+114,0.0,Burning a match is a ,"Physical changes are changes affecting the form of a chemical substance, but not its chemical composition."
+115,0.0281,Burning a match is a ,"A change in the physical state of a molecule, object, wave or system."
+116,0.0553,Burning a match is a ,Physical changes occur when objects or substances undergo a change that does not change their chemical composition
+117,0.0,Burning a match is a ,A chemical reaction is a process in which one or more substances are converted into other substances.
+118,0.0039,Burning a match is a ,"A change at the molecular, atomic or subcellular level in an organism."
+119,0.0,Burning a match is a ,"Chemical changes occur when a substance combines with another to form a new substance, called synthesis or, alternatively, decomposes into two or more different substances"
+120,0.1306,corroding metal ,"Physical changes are changes affecting the form of a chemical substance, but not its chemical composition."
+121,0.0,corroding metal ,"A change in the physical state of a molecule, object, wave or system."
+122,0.133,corroding metal ,Physical changes occur when objects or substances undergo a change that does not change their chemical composition
+123,0.0876,corroding metal ,A chemical reaction is a process in which one or more substances are converted into other substances.
+124,0.0,corroding metal ,"A change at the molecular, atomic or subcellular level in an organism."
+125,0.25,corroding metal ,"Chemical changes occur when a substance combines with another to form a new substance, called synthesis or, alternatively, decomposes into two or more different substances"
+126,0.2148,mixing lemonade powder into water ,"A change in the physical state of a molecule, object, wave or system."
+127,0.2148,mixing lemonade powder into water ,"A change at the molecular, atomic or subcellular level in an organism."
+128,0.0679,mixing lemonade powder into water ,"Chemical reactions can be either spontaneous, requiring no input of energy, or non-spontaneous, typically following the input of some type of energy, such as heat, light or electricity"
+129,0.0832,mixing lemonade powder into water ,"Chemical reactions are usually characterized by a chemical change, and they yield one or more products, which usually have properties different from the reactants"
+130,0.01,mixing lemonade powder into water ,"Chemical changes occur when a substance combines with another to form a new substance, called synthesis or, alternatively, decomposes into two or more different substances"
+131,0.0,mixing lemonade powder into water ,A chemical reaction is a process in which one or more substances are converted into other substances.
+132,0.1011,mixing lemonade powder into water ,A physical change involves a change in physical properties
+133,0.1011,mixing lemonade powder into water ,Physical changes occur when objects or substances undergo a change that does not change their chemical composition
+134,0.1011,mixing lemonade powder into water ,"Physical changes are used to separate mixtures into their component compounds, but can not usually be used to separate compounds into chemical elements or simpler compounds."
+135,0.1011,mixing lemonade powder into water ,"Physical changes are changes affecting the form of a chemical substance, but not its chemical composition."
+136,0.0,"To separate a mixture of paper clips and sand, Joe should use: ",the action of purifying a liquid by a process of heating and cooling.
+137,0.0349,"To separate a mixture of paper clips and sand, Joe should use: ",Magnetic separation is a process in which magnetically susceptible material is extracted from a mixture using a magnetic force.
+138,1.0,"To separate a mixture of paper clips and sand, Joe should use: ","Decantation is a process for the separation of mixtures, by removing a layer of liquid, generally one from which a precipitate has settled."
+139,0.0263,squeezing oranges to make orange juice ,A physical change involves a change in physical properties
+140,0.3802,squeezing oranges to make orange juice ,"Chemical changes occur when a substance combines with another to form a new substance, called synthesis or, alternatively, decomposes into two or more different substances"
+141,1.2108,squeezing oranges to make orange juice ,A chemical reaction is a process in which one or more substances are converted into other substances.
+142,0.0,squeezing oranges to make orange juice ,"Physical changes are used to separate mixtures into their component compounds, but can not usually be used to separate compounds into chemical elements or simpler compounds."
+143,0.0031,squeezing oranges to make orange juice ,"Physical changes are changes affecting the form of a chemical substance, but not its chemical composition."
+144,0.069,squeezing oranges to make orange juice ,"A change in the physical state of a molecule, object, wave or system."
+145,0.1357,squeezing oranges to make orange juice ,Physical changes occur when objects or substances undergo a change that does not change their chemical composition
+146,0.0021,squeezing oranges to make orange juice ,A chemical reaction is a process in which one or more substances are converted into other substances.
+147,0.0237,squeezing oranges to make orange juice ,"A change at the molecular, atomic or subcellular level in an organism."
+148,0.0059,squeezing oranges to make orange juice ,"Chemical changes occur when a substance combines with another to form a new substance, called synthesis or, alternatively, decomposes into two or more different substances"
+149,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The change of a liquid into a vapor at a temperature below the boiling point.
+150,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The change of state from water to water vapor is called evaporation.
+151,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The energy from the sun heated the water and caused it to evaporate - change from liquid water to water vapor.
+152,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. ""","The changing of a liquid into a gas, often under the influence of heat (as in the boiling of water)."
+153,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Liquid water changing to water vapor is evaporation.
+154,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,condensation is the process in which water vapor in the air is changed into liquid water.
+155,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Water drops on the outside of a cold glass of water are condensed water.
+156,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The water in a cloud comes from water vapor in the air that has condensed.
+157,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The condensed water molecules form liquid water droplets.
+158,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Water vapour condenses to liquid water.
+159,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. ""","Essential oils evaporate readily and are easily damaged by light, extremes of temperature and prolonged exposure to oxygen in the air."
+160,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Surface water is evaporated from the earth by the energy of the sun.
+161,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The water evaporated back into water vapor in the air.
+162,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Water evaporates as water vapor into the air.
+163,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Clouds get their water from evaporation.
+164,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Water from the oceans enters the atmosphere through evaporation.
+165,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Evaporation and condensation are two processes through which matter changes from one state to another.
+166,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. ""","In evaporation, matter changes from a liquid to a gas."
+167,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Evaporation involves changing water from its liquid state to a gaseous state (vapor)
+168,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,evaporation - the process of extracting moisture
+169,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Evaporation is a type of vaporization of a liquid that occurs from the surface of a liquid into a gaseous phase that is not saturated with the evaporating substance.
+170,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The liquid and solid water particles that fall from clouds and reach the ground are known as precipitation
+171,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Different forms of precipitation include: Rain is liquid water falling from the sky.
+172,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. ""","falling products of condensation of water vapour in the atmosphere, as rain, snow, or hail."
+173,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,precipitation Water that falls to the Earth from the sky.
+174,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Precipitation is the term used to describe water (moisture) that falls from the sky.
+175,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,precipitation is any product of the condensation of atmospheric water vapour that falls under gravity.
+176,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Condensation is defined as the phase change from gas (vapor) to liquid.
+177,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. ""","Also when the air cannot hold any more water, it precipitates."
+178,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The plant will then use the stored water in times or seasons of low precipitation.
+179,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,precipitation Water falling to the Earth.
+180,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Rain is a form of precipitation in which water falls back to earth as a liquid.
+181,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Evaporation is the process of a substance in a liquid state changing to a gaseous state due to an increase in temperature and/or pressure.
+182,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The process of liquid water changing into water vapor is called evaporation.
+183,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Most of the available water is used in transpiration to pull nutrients into the plant.
+184,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. ""","During transpiration, the plant loses water."
+185,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Water and its Movement Through the Plant Roughly 90% of the water that enters a plant is lost via transpiration.
+186,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The main driving force of water uptake and transport into a plant is transpiration of water from leaves.
+187,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Part of the water cycle that involves the loss of water from plants due to evaporation.
+188,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Condensation is defined as the phase change from gas (vapor) to liquid.
+189,0.6519,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Evaporation is a type of vaporization of a liquid that occurs from the surface of a liquid into a gaseous phase that is not saturated with the evaporating substance.
+190,0.6519,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The change of a liquid into a vapor at a temperature below the boiling point.
+191,0.6519,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. ""","The changing of a liquid into a gas, often under the influence of heat (as in the boiling of water)."
+192,0.2248,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Liquid water changing to water vapor is evaporation.
+193,0.2248,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The energy from the sun heated the water and caused it to evaporate - change from liquid water to water vapor.
+194,0.2248,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The process of liquid water changing into water vapor is called evaporation.
+195,0.1455,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The liquid and solid water particles that fall from clouds and reach the ground are known as precipitation
+196,0.0083,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Evaporation and condensation are two processes through which matter changes from one state to another.
+197,0.2201,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. ""","In evaporation, matter changes from a liquid to a gas."
+198,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,evaporation - the process of extracting moisture
+199,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. ""","Essential oils evaporate readily and are easily damaged by light, extremes of temperature and prolonged exposure to oxygen in the air."
+200,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Most of the available water is used in transpiration to pull nutrients into the plant.
+201,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. ""","During transpiration, the plant loses water."
+202,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Water and its Movement Through the Plant Roughly 90% of the water that enters a plant is lost via transpiration.
+203,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The main driving force of water uptake and transport into a plant is transpiration of water from leaves.
+204,0.0,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Part of the water cycle that involves the loss of water from plants due to evaporation.
+205,0.1468,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Evaporation is the process of a substance in a liquid state changing to a gaseous state due to an increase in temperature and/or pressure.
+206,0.0039,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Surface water is evaporated from the earth by the energy of the sun.
+207,0.0083,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Clouds get their water from evaporation.
+208,0.0083,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The change of state from water to water vapor is called evaporation.
+209,0.0083,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The water evaporated back into water vapor in the air.
+210,0.0083,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Water evaporates as water vapor into the air.
+211,0.0083,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Water from the oceans enters the atmosphere through evaporation.
+212,0.0083,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,precipitation Water falling to the Earth.
+213,0.0083,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,precipitation Water that falls to the Earth from the sky.
+214,0.0083,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Rain is a form of precipitation in which water falls back to earth as a liquid.
+215,0.0083,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. ""","Also when the air cannot hold any more water, it precipitates."
+216,0.0083,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Precipitation is the term used to describe water (moisture) that falls from the sky.
+217,0.0083,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Different forms of precipitation include: Rain is liquid water falling from the sky.
+218,0.0083,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Water drops on the outside of a cold glass of water are condensed water.
+219,0.0032,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The condensed water molecules form liquid water droplets.
+220,0.0016,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,condensation is the process in which water vapor in the air is changed into liquid water.
+221,0.0016,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,The water in a cloud comes from water vapor in the air that has condensed.
+222,0.0031,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. ""","falling products of condensation of water vapour in the atmosphere, as rain, snow, or hail."
+223,0.0031,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,precipitation is any product of the condensation of atmospheric water vapour that falls under gravity.
+224,0.0031,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Water vapour condenses to liquid water.
+225,0.1581,"""Rain, sleet, hail, and snow are all part of the <span class=""""blank""""> </span> process in the water cycle. """,Evaporation involves changing water from its liquid state to a gaseous state (vapor)
+226,0.0007,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Clouds get their water from evaporation.
+227,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ","In evaporation, matter changes from a liquid to a gas."
+228,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ","The changing of a liquid into a gas, often under the influence of heat (as in the boiling of water)."
+229,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Evaporation is a type of vaporization of a liquid that occurs from the surface of a liquid into a gaseous phase that is not saturated with the evaporating substance.
+230,0.2756,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Evaporation is the process of a substance in a liquid state changing to a gaseous state due to an increase in temperature and/or pressure.
+231,0.3862,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Evaporation involves changing water from its liquid state to a gaseous state (vapor)
+232,0.1352,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Condensation is defined as the phase change from gas (vapor) to liquid.
+233,0.4285,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",condensation is the process in which water vapor in the air is changed into liquid water.
+234,0.4285,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Water vapour condenses to liquid water.
+235,0.4285,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The condensed water molecules form liquid water droplets.
+236,0.2473,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Evaporation and condensation are two processes through which matter changes from one state to another.
+237,0.1832,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The liquid and solid water particles that fall from clouds and reach the ground are known as precipitation
+238,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The change of a liquid into a vapor at a temperature below the boiling point.
+239,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The water in a cloud comes from water vapor in the air that has condensed.
+240,0.448,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Water drops on the outside of a cold glass of water are condensed water.
+241,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Liquid water changing to water vapor is evaporation.
+242,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The change of state from water to water vapor is called evaporation.
+243,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The energy from the sun heated the water and caused it to evaporate - change from liquid water to water vapor.
+244,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The process of liquid water changing into water vapor is called evaporation.
+245,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The water evaporated back into water vapor in the air.
+246,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Water evaporates as water vapor into the air.
+247,1.0,"To separate a mixture of paper clips and sand, Joe should use: ","Decantation is a process for the separation of mixtures, by removing a layer of liquid, generally one from which a precipitate has settled."
+248,0.0,"To separate a mixture of paper clips and sand, Joe should use: ",The Distillation is a process of separating the component substances from a liquid mixture by selective evaporation and condensation.
+249,1.0,"To separate a mixture of paper clips and sand, Joe should use: ",Magnetic separation is a process in which magnetically susceptible material is extracted from a mixture using a magnetic force.
+250,0.0,"To separate a mixture of paper clips and sand, Joe should use: ",the action of purifying a liquid by a process of heating and cooling.
+251,0.0003,squeezing oranges to make orange juice ,"A change in the physical state of a molecule, object, wave or system."
+252,0.0003,squeezing oranges to make orange juice ,"A change at the molecular, atomic or subcellular level in an organism."
+253,0.0,squeezing oranges to make orange juice ,"Chemical reactions can be either spontaneous, requiring no input of energy, or non-spontaneous, typically following the input of some type of energy, such as heat, light or electricity"
+254,0.0001,squeezing oranges to make orange juice ,"Chemical reactions are usually characterized by a chemical change, and they yield one or more products, which usually have properties different from the reactants"
+255,0.0,squeezing oranges to make orange juice ,"Chemical changes occur when a substance combines with another to form a new substance, called synthesis or, alternatively, decomposes into two or more different substances"
+256,0.0,squeezing oranges to make orange juice ,A chemical reaction is a process in which one or more substances are converted into other substances.
+257,0.0002,squeezing oranges to make orange juice ,A physical change involves a change in physical properties
+258,0.0002,squeezing oranges to make orange juice ,Physical changes occur when objects or substances undergo a change that does not change their chemical composition
+259,0.0002,squeezing oranges to make orange juice ,"Physical changes are used to separate mixtures into their component compounds, but can not usually be used to separate compounds into chemical elements or simpler compounds."
+260,0.0002,squeezing oranges to make orange juice ,"Physical changes are changes affecting the form of a chemical substance, but not its chemical composition."
+261,1.0,Thermal energy that travels from the sun to Earth is transferred by ,Students should realize that water is better than air at conducting energy.
+262,1.0,Thermal energy that travels from the sun to Earth is transferred by ,Some materials conduct energy better than others.
+263,1.0,Thermal energy that travels from the sun to Earth is transferred by ,"emit (energy, especially light or heat) in the form of rays or waves."
+264,1.0,Thermal energy that travels from the sun to Earth is transferred by ,"the complete process in which energy is emitted by one body, transmitted through an intervening medium or space, and absorbed by another body."
+265,1.0,Thermal energy that travels from the sun to Earth is transferred by ,the process in which energy is emitted as particles or waves.
+266,0.829,Thermal energy that travels from the sun to Earth is transferred by ,The direct transfer of thermal motion (heat) between molecules of objects in direct contact with each other.
+267,0.0,Thermal energy that travels from the sun to Earth is transferred by ,The particles move around from one place to another through the flow of thermal energy during convection.
+268,0.0,Thermal energy that travels from the sun to Earth is transferred by ,The warmed surface water is then transferred downward into the water column by conduction and convection.
+269,0.0,Thermal energy that travels from the sun to Earth is transferred by ,Heat was transferred from the flame of the stove to the water by convection.
+270,0.0,Thermal energy that travels from the sun to Earth is transferred by ,Water vapor in the air rises mostly by convection.
+271,0.0,Thermal energy that travels from the sun to Earth is transferred by ,"Root functions include water and mineral conduction, food and water storage, and anchorage."
+272,0.0,Thermal energy that travels from the sun to Earth is transferred by ,Some materials conduct energy better than others.
+273,0.0,Thermal energy that travels from the sun to Earth is transferred by ,Students should realize that water is better than air at conducting energy.
+274,0.0,Thermal energy that travels from the sun to Earth is transferred by ,"Root functions include water and mineral conduction, food and water storage, and anchorage."
+275,0.0,Thermal energy that travels from the sun to Earth is transferred by ,The warmed surface water is then transferred downward into the water column by conduction and convection.
+276,0.0,Thermal energy that travels from the sun to Earth is transferred by ,The greater the movement of the air or water the greater the rate of heat removal by convection.
+277,0.0,Thermal energy that travels from the sun to Earth is transferred by ,Water vapor in the air rises mostly by convection.
+278,0.0,Thermal energy that travels from the sun to Earth is transferred by ,The warmed surface water is then transferred downward into the water column by conduction and convection.
+279,0.0,Thermal energy that travels from the sun to Earth is transferred by ,Heat was transferred from the flame of the stove to the water by convection.
+280,0.0,Thermal energy that travels from the sun to Earth is transferred by ,The particles move around from one place to another through the flow of thermal energy during convection.
+281,1.0,Thermal energy that travels from the sun to Earth is transferred by ,The direct transfer of thermal motion (heat) between molecules of objects in direct contact with each other.
+282,0.0,Thermal energy that travels from the sun to Earth is transferred by ,diverge or spread from or as if from a central point.
+283,0.0,Thermal energy that travels from the sun to Earth is transferred by ,"emit (energy, especially light or heat) in the form of rays or waves."
+284,0.0,Thermal energy that travels from the sun to Earth is transferred by ,"the complete process in which energy is emitted by one body, transmitted through an intervening medium or space, and absorbed by another body."
+285,0.0,Thermal energy that travels from the sun to Earth is transferred by ,the process in which energy is emitted as particles or waves.
+286,0.0,Thermal energy that travels from the sun to Earth is transferred by ,radiation is the emission or transmission of energy in the form of waves or particles through space or through a material medium
+287,0.003,Thermal energy that travels from the sun to Earth is transferred by ,The particles move around from one place to another through the flow of thermal energy during convection.
+288,0.2462,Thermal energy that travels from the sun to Earth is transferred by ,Heat was transferred from the flame of the stove to the water by convection.
+289,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Condensation is defined as the phase change from gas (vapor) to liquid.
+290,0.1352,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Evaporation is a type of vaporization of a liquid that occurs from the surface of a liquid into a gaseous phase that is not saturated with the evaporating substance.
+291,0.1352,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The change of a liquid into a vapor at a temperature below the boiling point.
+292,0.1352,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ","The changing of a liquid into a gas, often under the influence of heat (as in the boiling of water)."
+293,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Liquid water changing to water vapor is evaporation.
+294,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The energy from the sun heated the water and caused it to evaporate - change from liquid water to water vapor.
+295,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The process of liquid water changing into water vapor is called evaporation.
+296,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The liquid and solid water particles that fall from clouds and reach the ground are known as precipitation
+297,0.1442,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Evaporation and condensation are two processes through which matter changes from one state to another.
+298,0.0753,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ","In evaporation, matter changes from a liquid to a gas."
+299,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",evaporation - the process of extracting moisture
+300,0.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ","Essential oils evaporate readily and are easily damaged by light, extremes of temperature and prolonged exposure to oxygen in the air."
+301,0.0535,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Evaporation is the process of a substance in a liquid state changing to a gaseous state due to an increase in temperature and/or pressure.
+302,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Surface water is evaporated from the earth by the energy of the sun.
+303,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Water drops on the outside of a cold glass of water are condensed water.
+304,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",precipitation Water falling to the Earth.
+305,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",precipitation Water that falls to the Earth from the sky.
+306,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Rain is a form of precipitation in which water falls back to earth as a liquid.
+307,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ","Also when the air cannot hold any more water, it precipitates."
+308,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Precipitation is the term used to describe water (moisture) that falls from the sky.
+309,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Different forms of precipitation include: Rain is liquid water falling from the sky.
+310,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Clouds get their water from evaporation.
+311,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The change of state from water to water vapor is called evaporation.
+312,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The water evaporated back into water vapor in the air.
+313,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Water evaporates as water vapor into the air.
+314,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Water from the oceans enters the atmosphere through evaporation.
+315,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The condensed water molecules form liquid water droplets.
+316,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",condensation is the process in which water vapor in the air is changed into liquid water.
+317,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",The water in a cloud comes from water vapor in the air that has condensed.
+318,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Water vapour condenses to liquid water.
+319,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ","falling products of condensation of water vapour in the atmosphere, as rain, snow, or hail."
+320,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",precipitation is any product of the condensation of atmospheric water vapour that falls under gravity.
+321,1.0,"When water is heated and it is rising into the air as a gas (like water vapor), this is called: ",Evaporation involves changing water from its liquid state to a gaseous state (vapor)

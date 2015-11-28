@@ -1,0 +1,343 @@
+,entailScore,sentence1,sentence2
+0,0.0,rock,a glass composition from the batch of glass making ceramic 
+1,0.0,rock, the two strands wound in a double helix 
+2,0.0,rock, a minimum of 3 colors
+3,0.0,rock,a glass composition from the batch of glass making ceramic 
+4,0.0,rock, the two strands wound in a double helix 
+5,0.0,rock, a minimum of 3 colors
+6,0.0,water,solid particles
+7,0.0823,water,a material
+8,0.0,liquids,a glass composition from the batch of glass making ceramic 
+9,0.0,liquids, the two strands wound in a double helix 
+10,0.0,liquids, a minimum of 3 colors
+11,0.0,liquids,a material
+12,0.0,Waves,a variety of different metals 
+13,0.0,Waves, a witness 's testimony
+14,0.0,Waves,solid particles
+15,0.0,Waves,a material
+16,0.1952,new aluminum,used waste and materials 
+17,0.1952,new aluminum, waste paper 
+18,0.1952,new aluminum, existing and proven technologies 
+19,0.1952,new aluminum, v http://pinterest.com/pin/488359153317463714/ 
+20,0.1952,new aluminum, mortgage debt 
+21,0.1952,new aluminum, a product 
+22,0.1952,new aluminum, single - source waste materials 
+23,0.1952,new aluminum, vehicles ' tires -lrb- british english tyres -rrb- that are no longer suitable for use on vehicles due to wear or ... 
+24,0.1952,new aluminum, new products 
+25,0.1952,new aluminum, this bulky item 
+26,0.1952,new aluminum, materials that would otherwise be thrown away as trash and turning them into new 
+27,0.1952,new aluminum, scrap or waste plastic
+28,0.0004,plants,the pieces of your sense of self back together in a way that makes you happy
+29,0.0,plants,"reproductions , or prints , of painted art works"
+30,1.0,plants,the pollen of a flower 
+31,1.0,plants, tiny pollen cells 
+32,1.0,plants, the male part of the plant -lrb- pollen -rrb- 
+33,1.0,plants, pollen
+34,0.0,reaction,a substance 
+35,0.0,reaction, cookies 
+36,0.0,reaction, one or more substances
+37,0.0,things,a performance boost 
+38,0.0,things, the velocity of the sales process
+39,0.0,substances,certain aspects of the evolutionary system 
+40,0.0,substances, additional functionality 
+41,0.0,substances, society
+42,0.1452,substances,the environment 
+43,0.1452,substances," water , air , or land"
+44,0.0,water,solid particles
+45,0.0,water,solid particles
+46,0.0,water,binary data 
+47,0.0,water, an organization 's data storage requirements to an outside managed service provider 
+48,0.0,water, something
+49,0.0,water,binary data 
+50,0.0,water, an organization 's data storage requirements to an outside managed service provider 
+51,0.0,water, something
+52,0.0823,water,a material
+53,0.0823,water,a material
+54,0.0,organism,a program to reduce mismatches between its characteristics and those of the new context in which it is to be implemented or ... 
+55,0.0,organism, your metabolism 
+56,0.0,organism, your message 
+57,0.0,organism, actions
+58,0.0,organism,the skin
+59,0.0065,water,biochemical energy -lrb- stored as atp -rrb- 
+60,0.0065,water, oxygen 
+61,0.0065,water, energy 
+62,0.0065,water, gases 
+63,0.0065,water, atp 
+64,0.0065,water, chemical energy 
+65,0.0065,water, cellular energy involving oxygen 
+66,0.0065,water, cellular energy 
+67,0.0065,water, glucose
+68,0.0065,air,biochemical energy -lrb- stored as atp -rrb- 
+69,0.0065,air, oxygen 
+70,0.0065,air, energy 
+71,0.0065,air, gases 
+72,0.0065,air, atp 
+73,0.0065,air, chemical energy 
+74,0.0065,air, cellular energy involving oxygen 
+75,0.0065,air, cellular energy 
+76,0.0065,air, glucose
+77,0.0823,water,a material
+78,0.0823,air,a material
+79,0.0,animal,low power mode 
+80,0.0,animal, the content of your computer 's
+81,0.0,animal,a new database version -lrb- such as oracle9i -rrb- 
+82,0.0,animal, a copy of data 
+83,0.0,animal, a virtual machine 
+84,0.0,animal, a microsoft windows server 2003 operating system and internet information services -lrb- iis -rrb- 6.0 on a server and then 
+85,0.0,animal, a country or region 
+86,0.0,animal, a virtual server 
+87,0.0,animal," data between storage types , formats , or computer systems "
+88,0.0,animal, a user mailbox 
+89,0.0,animal," data , applications or other business elements from an organization 's onsite computers "
+90,0.0,animal, a vm 
+91,0.0,animal, a database application from a source 
+92,0.0,animal, a previous implementation of sql server 
+93,0.0,animal, data 
+94,0.0,animal, a specific amount of money 
+95,0.0,animal, a vm 's storage 
+96,0.0,animal, a database application from a source dbs to a target dbs
+97,0.0,animal,low power mode 
+98,0.0,animal, the content of your computer 's
+99,0.0,place,low power mode 
+100,0.0,place, the content of your computer 's
+101,0.0,animal,an emg signal 
+102,0.0,animal, an application data domain into subdomains which can be worked on individually in parallel to speedup the 
+103,0.0,animal, an image 
+104,0.0,animal, an mn matrix a
+105,0.0,place,an emg signal 
+106,0.0,place, an application data domain into subdomains which can be worked on individually in parallel to speedup the 
+107,0.0,place, an image 
+108,0.0,place, an mn matrix a
+109,0.3974,animal,a new database version -lrb- such as oracle9i -rrb- 
+110,0.3974,animal, a copy of data 
+111,0.3974,animal, a virtual machine 
+112,0.3974,animal, a microsoft windows server 2003 operating system and internet information services -lrb- iis -rrb- 6.0 on a server and then 
+113,0.3974,animal, a country or region 
+114,0.3974,animal, a virtual server 
+115,0.3974,animal," data between storage types , formats , or computer systems "
+116,0.3974,animal, a user mailbox 
+117,0.3974,animal," data , applications or other business elements from an organization 's onsite computers "
+118,0.3974,animal, a vm 
+119,0.3974,animal, a database application from a source 
+120,0.3974,animal, a previous implementation of sql server 
+121,0.3974,animal, data 
+122,0.3974,animal, a specific amount of money 
+123,0.3974,animal, a vm 's storage 
+124,0.3974,animal, a database application from a source dbs to a target dbs
+125,0.3974,place,a new database version -lrb- such as oracle9i -rrb- 
+126,0.3974,place, a copy of data 
+127,0.3974,place, a virtual machine 
+128,0.3974,place, a microsoft windows server 2003 operating system and internet information services -lrb- iis -rrb- 6.0 on a server and then 
+129,0.3974,place, a country or region 
+130,0.3974,place, a virtual server 
+131,0.3974,place," data between storage types , formats , or computer systems "
+132,0.3974,place, a user mailbox 
+133,0.3974,place," data , applications or other business elements from an organization 's onsite computers "
+134,0.3974,place, a vm 
+135,0.3974,place, a database application from a source 
+136,0.3974,place, a previous implementation of sql server 
+137,0.3974,place, data 
+138,0.3974,place, a specific amount of money 
+139,0.3974,place, a vm 's storage 
+140,0.3974,place, a database application from a source dbs to a target dbs
+141,0.1783,animal,the pollen of a flower 
+142,0.1783,animal, tiny pollen cells 
+143,0.1783,animal, the male part of the plant -lrb- pollen -rrb- 
+144,0.1783,animal, pollen
+145,0.1783,place,the pollen of a flower 
+146,0.1783,place, tiny pollen cells 
+147,0.1783,place, the male part of the plant -lrb- pollen -rrb- 
+148,0.1783,place, pollen
+149,0.0,water,the gap between what people do not know and what they can effectively put to use 
+150,0.0,water, solutes
+151,0.0,materials,the gap between what people do not know and what they can effectively put to use 
+152,0.0,materials, solutes
+153,0.0403,water,a salt concentration 
+154,0.0403,water, a solvent
+155,0.0403,materials,a salt concentration 
+156,0.0403,materials, a solvent
+157,0.6139,water particles,solid particles
+158,0.231,water particles,a material
+159,0.8765,body,the gap between what people do not know and what they can effectively put to use 
+160,0.8765,body, solutes
+161,0.8922,body,a substance 
+162,0.8922,body, a node 
+163,0.8922,body, a primary structure
+164,0.0,body,a salt concentration 
+165,0.0,body, a solvent
+166,0.0,animal,low power mode 
+167,0.0,animal, the content of your computer 's
+168,0.0,animal,a new database version -lrb- such as oracle9i -rrb- 
+169,0.0,animal, a copy of data 
+170,0.0,animal, a virtual machine 
+171,0.0,animal, a microsoft windows server 2003 operating system and internet information services -lrb- iis -rrb- 6.0 on a server and then 
+172,0.0,animal, a country or region 
+173,0.0,animal, a virtual server 
+174,0.0,animal," data between storage types , formats , or computer systems "
+175,0.0,animal, a user mailbox 
+176,0.0,animal," data , applications or other business elements from an organization 's onsite computers "
+177,0.0,animal, a vm 
+178,0.0,animal, a database application from a source 
+179,0.0,animal, a previous implementation of sql server 
+180,0.0,animal, data 
+181,0.0,animal, a specific amount of money 
+182,0.0,animal, a vm 's storage 
+183,0.0,animal, a database application from a source dbs to a target dbs
+184,0.0,animal,the skin
+185,1.0,Energy,a common ancestor 
+186,1.0,Energy, energy 
+187,1.0,Energy, one species 
+188,1.0,Energy, a single ancestral species
+189,0.0006,Energy,"the taken-for-granted assumptions the individual makes about self , others and the organisation "
+190,0.0006,Energy," a cumulative , multiselved , multi-voiced identity , which takes place between and among composing events "
+191,0.0006,Energy," a class for meta-information - information about its fields and methods , calling methods , accessing fields "
+192,0.0006,Energy, the structure of a program at runtime 
+193,0.0006,Energy, a driver 
+194,0.0006,Energy, a signal 
+195,0.0006,Energy, something in more detail
+196,0.0003,things,a program to reduce mismatches between its characteristics and those of the new context in which it is to be implemented or ... 
+197,0.0003,things, your metabolism 
+198,0.0003,things, your message 
+199,0.0003,things, actions
+200,0.0,gas changes,solid particles
+201,0.0052,gas changes,a material
+202,0.0,seed,the accumulated soot 
+203,0.0,seed, the resin beads
+204,0.8789,object,an idea 
+205,0.8789,object, meanings 
+206,0.8789,object," data about people , cultures , and natural environments "
+207,0.8789,object, an environment where young people can engage in informal educational activities
+208,0.0,droplets,solid particles
+209,0.0,droplets,a material
+210,0.0823,Liquid water,a material
+211,0.0,plant,a program to reduce mismatches between its characteristics and those of the new context in which it is to be implemented or ... 
+212,0.0,plant, your metabolism 
+213,0.0,plant, your message 
+214,0.0,plant, actions
+215,0.0,plant,changes to a project baseline 
+216,0.0,plant, the current zone district 
+217,0.0,plant, a system 
+218,0.0,plant," the basic elements of an organization 's culture , including the norms , values , and assumptions under which"
+219,0.0,rocks,particles suspended in water to settle out of the suspension under the effect of gravity
+220,1.0,object,employees 
+221,1.0,object, different crops 
+222,1.0,object, an object
+223,0.0823,water,a material
+224,0.0823,water vapor,a material
+225,0.0,water,solid particles
+226,0.0,water vapor,solid particles
+227,0.0,autotrophs,life
+228,0.0,starches,life
+229,0.1511,autotrophs,a material
+230,0.1511,starches,a material
+231,0.5867,one object,"the taken-for-granted assumptions the individual makes about self , others and the organisation "
+232,0.5867,one object," a cumulative , multiselved , multi-voiced identity , which takes place between and among composing events "
+233,0.5867,one object," a class for meta-information - information about its fields and methods , calling methods , accessing fields "
+234,0.5867,one object, the structure of a program at runtime 
+235,0.5867,one object, a driver 
+236,0.5867,one object, a signal 
+237,0.5867,one object, something in more detail
+238,0.0823,water,a material
+239,0.0823,Earth,a material
+240,0.0042,strikes,"the taken-for-granted assumptions the individual makes about self , others and the organisation "
+241,0.0042,strikes," a cumulative , multiselved , multi-voiced identity , which takes place between and among composing events "
+242,0.0042,strikes," a class for meta-information - information about its fields and methods , calling methods , accessing fields "
+243,0.0042,strikes, the structure of a program at runtime 
+244,0.0042,strikes, a driver 
+245,0.0042,strikes, a signal 
+246,0.0042,strikes, something in more detail
+247,0.0,strikes,"the eye 's refractive error , or need for corrective spectacle and/or contact lenses "
+248,0.0,strikes, the eye 's refractive 
+249,0.0,strikes, the optimal eyeglasses prescription for your eyes 
+250,0.0,strikes, the eyes 
+251,0.0,strikes, the glasses prescription 
+252,0.0,strikes," the eye 's refractive error , or need for corrective glasses and/or"
+253,0.0,cells,the accumulated soot 
+254,0.0,cells, the resin beads
+255,0.0,animal,the pieces of your sense of self back together in a way that makes you happy
+256,0.0,Rocks,a glass composition from the batch of glass making ceramic 
+257,0.0,Rocks, the two strands wound in a double helix 
+258,0.0,Rocks, a minimum of 3 colors
+259,0.0,organisms,another free-living
+260,0.2097,planet,employees 
+261,0.2097,planet, different crops 
+262,0.2097,planet, an object
+263,0.0238,planet,the iranians 
+264,0.0238,planet, the brain 
+265,0.0238,planet, a model 
+266,0.0238,planet," high yield varieties of better seeds , chemical fertilizers and new techniques in agriculture "
+267,0.0238,planet, ourselves and our world 
+268,0.0238,planet, a business like a franchise
+269,0.0,plants,body heat
+270,0.0,plants,biochemical energy -lrb- stored as atp -rrb- 
+271,0.0,plants, oxygen 
+272,0.0,plants, energy 
+273,0.0,plants, gases 
+274,0.0,plants, atp 
+275,0.0,plants, chemical energy 
+276,0.0,plants, cellular energy involving oxygen 
+277,0.0,plants, cellular energy 
+278,0.0,plants, glucose
+279,0.0008,force,a performance boost 
+280,0.0008,force, the velocity of the sales process
+281,0.0008,objects,a performance boost 
+282,0.0008,objects, the velocity of the sales process
+283,0.0204,material,"the taken-for-granted assumptions the individual makes about self , others and the organisation "
+284,0.0204,material," a cumulative , multiselved , multi-voiced identity , which takes place between and among composing events "
+285,0.0204,material," a class for meta-information - information about its fields and methods , calling methods , accessing fields "
+286,0.0204,material, the structure of a program at runtime 
+287,0.0204,material, a driver 
+288,0.0204,material, a signal 
+289,0.0204,material, something in more detail
+290,0.0,material,"the eye 's refractive error , or need for corrective spectacle and/or contact lenses "
+291,0.0,material, the eye 's refractive 
+292,0.0,material, the optimal eyeglasses prescription for your eyes 
+293,0.0,material, the eyes 
+294,0.0,material, the glasses prescription 
+295,0.0,material," the eye 's refractive error , or need for corrective glasses and/or"
+296,0.0,gas,actual demand
+297,1.0,water,the subsurface pore water 
+298,1.0,water, cold air
+299,0.0,water,an electrically conducting object 
+300,0.0,water, hydrogen
+301,0.0828,water,a normal body temperature 
+302,0.0828,water, contact 
+303,0.0828,water, the average temperature of the atmosphere
+304,0.0,water,bits of content
+305,1.0,substances,complex macromolecules 
+306,1.0,substances, antigen-specific b cells 
+307,1.0,substances, one or more substances
+308,0.0,Bees,the pollen of a flower 
+309,0.0,Bees, tiny pollen cells 
+310,0.0,Bees, the male part of the plant -lrb- pollen -rrb- 
+311,0.0,Bees, pollen
+312,0.0,Bees,sperm and eggs 
+313,0.0,Bees, a nutrient solution 
+314,0.0,Bees, eggs 
+315,0.0,Bees, a high quality liquid nutrient solution 
+316,0.0,Bees, the shallow ocean waters 
+317,0.0,Bees, a sperm and egg
+318,0.0,you,low power mode 
+319,0.0,you, the content of your computer 's
+320,0.0,you,a new database version -lrb- such as oracle9i -rrb- 
+321,0.0,you, a copy of data 
+322,0.0,you, a virtual machine 
+323,0.0,you, a microsoft windows server 2003 operating system and internet information services -lrb- iis -rrb- 6.0 on a server and then 
+324,0.0,you, a country or region 
+325,0.0,you, a virtual server 
+326,0.0,you," data between storage types , formats , or computer systems "
+327,0.0,you, a user mailbox 
+328,0.0,you," data , applications or other business elements from an organization 's onsite computers "
+329,0.0,you, a vm 
+330,0.0,you, a database application from a source 
+331,0.0,you, a previous implementation of sql server 
+332,0.0,you, data 
+333,0.0,you, a specific amount of money 
+334,0.0,you, a vm 's storage 
+335,0.0,you, a database application from a source dbs to a target dbs
+336,1.0,object,"oils such as coconut oil , olive oil and other similar oils "
+337,1.0,object, sunflower or coconut oil 
+338,1.0,object, a portion of your model 
+339,1.0,object, your
+340,0.0886,animal,the skin
+341,0.0886,object,the skin
