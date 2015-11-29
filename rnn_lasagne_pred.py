@@ -350,7 +350,6 @@ def getIndependentWordsVector():
     
 def gen_csvdata(min_length=MIN_LENGTH, max_length=MAX_LENGTH, n_batch=N_BATCH):
     test_df = pd.read_csv("qa_data.csv")
-    test_df = test_df.drop(test_df.columns[[0]], axis=1)
     getIndependentWordsVector()
     train_len = len(train_sentenceVectors1)
     test_len = len(test_undergoerVectors1)

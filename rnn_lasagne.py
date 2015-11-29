@@ -187,8 +187,13 @@ def RNN():
     #network_output_1 = lasagne.layers.get_output(l_out_1)
     network_output_2 =  lasagne.layers.get_output(l_out_2)
     #network_output_2 = lasagne.layers.get_output(l_out_2)
-    cost = T.mean((T.sum(network_output_1*network_output_2,axis = 1) - target_values)**2)
-    cosine_sim = T.sum(network_output_1*network_output_2,axis = 1) 
+    #cost = T.mean((T.sum(network_output_1*network_output_2,axis = 1) - target_values)**2)
+    #1 - Cosine similarity
+    mod_y_1 = T.sqrt(T.sum(T.sqr(network_output_1), 1))
+    mod_y_2 = T.sqrt(T.sum(T.sqr(network_output_2), 1))
+    cosine_sim = T.sum(T.dot(network_output_1.flatten(), network_output_2.flatten()))/(mod_y_1*mod_y_2)
+    cost = T.mean((cosine_sim - target_values)**2)
+   # cosine_sim = T.sum(network_output_1*network_output_2,axis = 1) 
     # Retrieve all parameters from the network
     all_params = lasagne.layers.get_all_params(l_out_1) + lasagne.layers.get_all_params(l_out_2)
     # Compute SGD updates for training
@@ -198,14 +203,14 @@ def RNN():
     print("Compiling functions ...")
     train = theano.function([l_in_1.input_var, l_in_2.input_var, target_values, l_mask_1.input_var,
                               l_mask_2.input_var],
-                            cost,  updates=updates, on_unused_input='warn')
+                            mod_y_1, mod_y_2, cosine_sim, cost,  updates=updates, on_unused_input='warn')
     compute_cost = theano.function(
         [l_in_1.input_var, l_in_2.input_var, target_values, l_mask_1.input_var,
                               l_mask_2.input_var], cost, on_unused_input='warn')
     
     test_cosine = theano.function(
         [l_in_1.input_var, l_in_2.input_var, target_values, l_mask_1.input_var,
-                              l_mask_2.input_var], [cosine_sim], on_unused_input='warn')
+                              l_mask_2.input_var], [cosine_sim], mod_y_1, mod_y_2, on_unused_input='warn')
     
     train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1, mask_train_2 \
            ,test_sentence_1,  test_sentence_2, cosineSimtest, mask_test_1, mask_test_2, test_df = gen_csvdata()
@@ -219,7 +224,7 @@ def RNN():
             if epoch%100 == 0:
                 cosine_sim = test_cosine(test_sentence_1,  test_sentence_2, cosineSimtest, mask_test_1, mask_test_2)
                 test_df["newCosineSimilarity"] = cosine_sim[0]
-                directory = "result/entailment/RNN/"+str(epoch)
+                directory = "newresult/entailment/RNN/"+str(epoch)
                 if not os.path.exists(directory):
                     os.makedirs(directory)
                 test_df.to_csv(directory+"/cosineSimilarity.csv")
