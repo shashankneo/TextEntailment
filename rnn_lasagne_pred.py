@@ -48,7 +48,7 @@ gold_undergoer_cosine_sim = []
 gold_enabler_cosine_sim = []
 gold_trigger_cosine_sim = []
 gold_result_cosine_sim = []
-num_epochs = 10000
+num_epochs = 100000
 def initStopWordsList():
     global stopwords
     stopwords = []

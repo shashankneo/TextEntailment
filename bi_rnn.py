@@ -145,7 +145,7 @@ def gen_csvdata(min_length=MIN_LENGTH, max_length=MAX_LENGTH, n_batch=N_BATCH):
         sentence_len_2 = len(test_sentence_2[n])
         mask_test_2[n,:sentence_len_2] = 1       
     
-    return np.array(train_sentence_2).astype(theano.config.floatX) , np.array(train_sentence_2).astype(theano.config.floatX), np.array(cosineSimtrain).astype(theano.config.floatX),\
+    return np.array(train_sentence_1).astype(theano.config.floatX) , np.array(train_sentence_2).astype(theano.config.floatX), np.array(cosineSimtrain).astype(theano.config.floatX),\
          mask_train_1.astype(theano.config.floatX), mask_train_2.astype(theano.config.floatX) \
            ,np.array(test_sentence_1).astype(theano.config.floatX),  np.array(test_sentence_2).astype(theano.config.floatX), \
            np.array(cosineSimtest).astype(theano.config.floatX), mask_test_1.astype(theano.config.floatX), mask_test_2.astype(theano.config.floatX), test_df

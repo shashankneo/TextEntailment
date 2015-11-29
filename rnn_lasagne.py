@@ -37,7 +37,7 @@ wordVectorDict = {}
 sentenceVectors1 = []
 sentenceVectors2 = []
 gold_cosine_sim = []
-num_epochs = 10000
+num_epochs = 100000
 def initStopWordsList():
     global stopwords
     stopwords = []
