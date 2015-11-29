@@ -190,10 +190,11 @@ def LSTM():
     #Number of features are 300 because each word is a vector of 300 dimensions
     
     W = lasagne.init.HeUniform()
+    forget_gate = lasagne.layers.Gate(b=lasagne.init.Constant(5.0))
     l_in_1 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH, 300))
     l_mask_1 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH))
     l_forward_1 = lasagne.layers.LSTMLayer(
-        l_in_1, N_HIDDEN,  grad_clipping=GRAD_CLIP,
+        l_in_1, N_HIDDEN,  grad_clipping=GRAD_CLIP, forgetgate=forget_gate,
         nonlinearity=lasagne.nonlinearities.tanh)
     l_out_1 = lasagne.layers.SliceLayer(l_forward_1, -1, 1)
     #l_out_1 = lasagne.layers.DenseLayer(l_forward_1, num_units=n_output)

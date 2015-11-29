@@ -368,7 +368,7 @@ def CNN():
     #network_output_2 = lasagne.layers.get_output(l_out_2)
     cost = lasagne.objectives.categorical_crossentropy(T.sum(network_output_1*network_output_2,axis = 1), target_values)
     cost = cost.mean()
-    cosine_sim = network_output_1 * network_output_2
+    cosine_sim = theano.printing.Print("this is l_dense_1")(network_output_1 * network_output_2)
     # Retrieve all parameters from the network
     all_params = lasagne.layers.get_all_params(l_out_1) + lasagne.layers.get_all_params(l_out_2)
     # Compute SGD updates for training
