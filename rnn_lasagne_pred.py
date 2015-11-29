@@ -464,8 +464,11 @@ def RNN():
     #network_output_1 = lasagne.layers.get_output(l_out_1)
     network_output_2 =  lasagne.layers.get_output(l_out_2)
     #network_output_2 = lasagne.layers.get_output(l_out_2)
-    cost = T.mean((T.sum(network_output_1*network_output_2,axis = 1) - target_values)**2)
-    cosine_sim = T.sum(network_output_1*network_output_2,axis = 1) 
+    mod_y_1 = T.sqrt(T.sum(T.sqr(network_output_1), 1))
+    mod_y_2 = T.sqrt(T.sum(T.sqr(network_output_2), 1))
+    cosine_simi = T.sum(network_output_1*network_output_2,axis = 1)/(mod_y_1*mod_y_2)
+    cost = T.mean((cosine_simi - target_values)**2)
+   # cosine_sim = T.sum(network_output_1*network_output_2,axis = 1) 
     # Retrieve all parameters from the network
     all_params = lasagne.layers.get_all_params(l_out_1) + lasagne.layers.get_all_params(l_out_2)
     # Compute SGD updates for training
@@ -475,14 +478,14 @@ def RNN():
     print("Compiling functions ...")
     train = theano.function([l_in_1.input_var, l_in_2.input_var, target_values, l_mask_1.input_var,
                               l_mask_2.input_var],
-                            cost,  updates=updates, on_unused_input='warn')
-    compute_cost = theano.function(
-        [l_in_1.input_var, l_in_2.input_var, target_values, l_mask_1.input_var,
-                              l_mask_2.input_var], cost, on_unused_input='warn')
-    
+                             cost,  updates=updates, on_unused_input='warn')
+#     compute_cost = theano.function(
+#         [l_in_1.input_var, l_in_2.input_var, target_values, l_mask_1.input_var,
+#                               l_mask_2.input_var], cost, on_unused_input='warn')
+#     
     test_cosine = theano.function(
         [l_in_1.input_var, l_in_2.input_var, target_values, l_mask_1.input_var,
-                              l_mask_2.input_var], [cosine_sim], on_unused_input='warn')
+                              l_mask_2.input_var], cosine_simi, on_unused_input='warn')
     
     train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1, mask_train_2 \
            ,test_sentence_undergoer_1,  test_sentence_undergoer_2 \
@@ -498,8 +501,8 @@ def RNN():
     print("Training ...")
     try:
         for epoch in range(num_epochs):
-            train(train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1,mask_train_2 )
-            cost_val = compute_cost(train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1,mask_train_2 )
+            cost_val = train(train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1,mask_train_2 )
+            #cost_val = compute_cost(train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1,mask_train_2 )
             print("Epoch {} validation cost = {}".format(epoch, cost_val))
             if epoch%100 == 0:
                 cosine_undergoersim = test_cosine(test_sentence_undergoer_1,  test_sentence_undergoer_2,\
