@@ -203,14 +203,14 @@ def RNN():
     print("Compiling functions ...")
     train = theano.function([l_in_1.input_var, l_in_2.input_var, target_values, l_mask_1.input_var,
                               l_mask_2.input_var],
-                            mod_y_1, mod_y_2, cosine_sim, cost,  updates=updates, on_unused_input='warn')
+                            [mod_y_1, mod_y_2, cosine_sim, cost],  updates=updates, on_unused_input='warn')
     compute_cost = theano.function(
         [l_in_1.input_var, l_in_2.input_var, target_values, l_mask_1.input_var,
-                              l_mask_2.input_var], cost, on_unused_input='warn')
+                              l_mask_2.input_var], [mod_y_1, mod_y_2, cosine_sim, cost], on_unused_input='warn')
     
     test_cosine = theano.function(
         [l_in_1.input_var, l_in_2.input_var, target_values, l_mask_1.input_var,
-                              l_mask_2.input_var], [cosine_sim], mod_y_1, mod_y_2, on_unused_input='warn')
+                              l_mask_2.input_var], [mod_y_1, mod_y_2, cosine_sim], on_unused_input='warn')
     
     train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1, mask_train_2 \
            ,test_sentence_1,  test_sentence_2, cosineSimtest, mask_test_1, mask_test_2, test_df = gen_csvdata()
