@@ -118,7 +118,7 @@ def gen_csvdata(min_length=MIN_LENGTH, max_length=MAX_LENGTH, n_batch=N_BATCH):
     inputs = inputs.drop(inputs.columns[[0]], axis=1)
     getIndependentWordsVector()
     total_length_input = len(sentenceVectors1)
-    train_len = (80*total_length_input)/100
+    train_len = (70*total_length_input)/100
     test_len = total_length_input - train_len
     #Initialize Mask matrices
     mask_train_1 = np.zeros((train_len, max_length))
