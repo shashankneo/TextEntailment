@@ -10,6 +10,7 @@ import numpy as np
 import string
 import re
 import sys
+import os
 wordList = {}
 stopwords = []
 wordName= []
@@ -36,7 +37,7 @@ wordVectorDict = {}
 sentenceVectors1 = []
 sentenceVectors2 = []
 gold_cosine_sim = []
-num_epochs = 100
+num_epochs = 10000
 def initStopWordsList():
     global stopwords
     stopwords = []
@@ -102,7 +103,8 @@ def formWordDictFromCsv(input):
 
 #Parses the pair of sentence. Starts the operation to convert sentence into vector of words
 def getIndependentWordsVector():
-    inputs = pd.read_csv("inputSentences.csv")
+    inputs = pd.read_csv("best_data.csv")
+    inputs = inputs.drop(inputs.columns[[0]], axis=1)
     wordVec_csv = pd.read_csv("wordVectors.csv")
     wordVec_csv = wordVec_csv.drop(wordVec_csv.columns[[0]], axis=1)
     wordVec_csv.apply(formWordDictFromCsv, axis=1)
@@ -112,7 +114,8 @@ def getIndependentWordsVector():
     
     
 def gen_csvdata(min_length=MIN_LENGTH, max_length=MAX_LENGTH, n_batch=N_BATCH):
-    inputs = pd.read_csv("input.csv")
+    inputs = pd.read_csv("best_data.csv")
+    inputs = inputs.drop(inputs.columns[[0]], axis=1)
     getIndependentWordsVector()
     total_length_input = len(sentenceVectors1)
     train_len = (80*total_length_input)/100
@@ -142,36 +145,11 @@ def gen_csvdata(min_length=MIN_LENGTH, max_length=MAX_LENGTH, n_batch=N_BATCH):
         sentence_len_2 = len(test_sentence_2[n])
         mask_test_2[n,:sentence_len_2] = 1       
     
-    return np.array(train_sentence_2).astype(theano.config.floatX) , np.array(train_sentence_2).astype(theano.config.floatX), np.array(cosineSimtrain).astype(theano.config.floatX),\
+    return np.array(train_sentence_1).astype(theano.config.floatX) , np.array(train_sentence_2).astype(theano.config.floatX), np.array(cosineSimtrain).astype(theano.config.floatX),\
          mask_train_1.astype(theano.config.floatX), mask_train_2.astype(theano.config.floatX) \
            ,np.array(test_sentence_1).astype(theano.config.floatX),  np.array(test_sentence_2).astype(theano.config.floatX), \
            np.array(cosineSimtest).astype(theano.config.floatX), mask_test_1.astype(theano.config.floatX), mask_test_2.astype(theano.config.floatX), test_df
 
-def gen_data(min_length=MIN_LENGTH, max_length=MAX_LENGTH, n_batch=N_BATCH):
-    # Generate X - we'll fill the last dimension later
-    X = np.concatenate([np.random.uniform(size=(n_batch, max_length, 1)),
-                        np.zeros((n_batch, max_length, 1))],
-                       axis=-1)
-    mask = np.zeros((n_batch, max_length))
-    y = np.zeros((n_batch,))
-    # Compute masks and correct values
-    for n in range(n_batch):
-        # Randomly choose the sequence length
-        length = np.random.randint(min_length, max_length)
-        # Make the mask for this sample 1 within the range of length
-        mask[n, :length] = 1
-        # Zero out X after the end of the sequence
-        X[n, length:, 0] = 0
-        # Set the second dimension to 1 at the indices to add
-        X[n, np.random.randint(length/10), 1] = 1
-        X[n, np.random.randint(length/2, length), 1] = 1
-        # Multiply and sum the dimensions of X to get the target value
-        y[n] = np.sum(X[n, :, 0]*X[n, :, 1])
-    # Center the inputs and outputs
-    X -= X.reshape(-1, 2).mean(axis=0)
-    y -= y.mean()
-    return (X.astype(theano.config.floatX), y.astype(theano.config.floatX),
-            mask.astype(theano.config.floatX))
 def RNN():
     # First, we build the network, for first sentence starting with an input layer
     # Recurrent layers expect input of shape
@@ -238,13 +216,18 @@ def RNN():
             train(train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1,mask_train_2 )
             cost_val = compute_cost(train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1,mask_train_2 )
             print("Epoch {} validation cost = {}".format(epoch, cost_val))
-            
+            if epoch%100 == 0:
+                cosine_sim = test_cosine(test_sentence_1,  test_sentence_2, cosineSimtest, mask_test_1, mask_test_2)
+                test_df["newCosineSimilarity"] = cosine_sim[0]
+                directory = "result/entailment/RNN/"+str(epoch)
+                if not os.path.exists(directory):
+                    os.makedirs(directory)
+                test_df.to_csv(directory+"/cosineSimilarity.csv")
         
     except KeyboardInterrupt:
         pass
     
     cosine_sim = test_cosine(test_sentence_1,  test_sentence_2, cosineSimtest, mask_test_1, mask_test_2)
-    #x = pd.Series(cosine_sim[0])
     test_df["newCosineSimilarity"] = cosine_sim[0]
     test_df.to_csv("cosineSimilariry.csv")
     

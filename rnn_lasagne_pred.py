@@ -8,7 +8,7 @@ import nltk
 import math
 import string
 import re
-
+import os
 wordList = {}
 stopwords = []
 wordName= []
@@ -48,7 +48,7 @@ gold_undergoer_cosine_sim = []
 gold_enabler_cosine_sim = []
 gold_trigger_cosine_sim = []
 gold_result_cosine_sim = []
-num_epochs = 100
+num_epochs = 10000
 def initStopWordsList():
     global stopwords
     stopwords = []
@@ -58,15 +58,21 @@ def initStopWordsList():
         stopwords.append(word)
 
 def getTokens(filetext):
-    no_punctuation = filetext.translate(None, string.punctuation)
-    filetext=re.sub("[^a-zA-Z]+", " ", no_punctuation)
-    filetext = filetext.lower()
-    tokens = nltk.word_tokenize(filetext)
+    tokens = " "
+    try:
+        text = filetext.split("|")
+        filetext = " ".join(text)
+        no_punctuation = filetext.translate(None, string.punctuation)
+        filetext=re.sub("[^a-zA-Z]+", " ", no_punctuation)
+        filetext = filetext.lower()
+        tokens = nltk.word_tokenize(filetext)
+    except Exception,e:
+        pass
     return tokens
        
 def getTrainSentenceVector1(input):
     zero_word_vec = np.zeros((300,))
-    leftTokens = getTokens(input["sentenc1"])
+    leftTokens = getTokens(input["sentence1"])
     sentVec = []
     leftTokenCount = 0
     for token in leftTokens:
@@ -103,13 +109,15 @@ def getTrainCosineSimOutput(input):
 def getTestUndergoerVector1(input):
     entailScr = input["UNDERGOER_SCORE"]
     zero_word_vec = np.zeros((300,))
-    leftTokens = getTokens(input["Q_UNDERGOER"])
     sentVec = []
     leftTokenCount = 0
     if math.isnan(entailScr) or entailScr == None:
         pass
     else:
+        leftTokens = getTokens(input["Q_UNDERGOER"])
         for token in leftTokens:
+            if leftTokenCount == MAX_LENGTH:
+                break
             if token not in wordVectorDict:
                 #print token + " in Question"
                 pass
@@ -123,13 +131,15 @@ def getTestUndergoerVector1(input):
 def getTestUndergoerVector2(input):
     entailScr = input["UNDERGOER_SCORE"]
     zero_word_vec = np.zeros((300,))
-    leftTokens = getTokens(input["A_UNDERGOER"])
     sentVec = []
     leftTokenCount = 0
     if math.isnan(entailScr) or entailScr == None:
         pass
     else:
+        leftTokens = getTokens(input["A_UNDERGOER"])
         for token in leftTokens:
+            if leftTokenCount == MAX_LENGTH:
+                break
             if token not in wordVectorDict:
                 #print token + " in Question"
                 pass
@@ -150,13 +160,15 @@ def getTestUndergoerCosineSimOutput(input):
 def getTestEnablerVector1(input):
     entailScr = input["ENABLER_SCORE"]
     zero_word_vec = np.zeros((300,))
-    leftTokens = getTokens(input["Q_ENABLER"])
     sentVec = []
     leftTokenCount = 0
     if math.isnan(entailScr) or entailScr == None:
         pass
     else:
+        leftTokens = getTokens(input["Q_ENABLER"])
         for token in leftTokens:
+            if leftTokenCount == MAX_LENGTH:
+                break
             if token not in wordVectorDict:
                 #print token + " in Question"
                 pass
@@ -170,13 +182,15 @@ def getTestEnablerVector1(input):
 def getTestEnablerVector2(input):
     entailScr = input["ENABLER_SCORE"]
     zero_word_vec = np.zeros((300,))
-    leftTokens = getTokens(input["A_ENABLER"])
     sentVec = []
     leftTokenCount = 0
     if math.isnan(entailScr) or entailScr == None:
         pass
     else:
+        leftTokens = getTokens(input["A_ENABLER"])
         for token in leftTokens:
+            if leftTokenCount == MAX_LENGTH:
+                break
             if token not in wordVectorDict:
                 #print token + " in Question"
                 pass
@@ -197,13 +211,15 @@ def getTestEnablerCosineSimOutput(input):
 def getTestTriggerVector1(input):
     entailScr = input["TRIGGER_SCORE"]
     zero_word_vec = np.zeros((300,))
-    leftTokens = getTokens(input["Q_TRIGGER"])
     sentVec = []
     leftTokenCount = 0
     if math.isnan(entailScr) or entailScr == None:
         pass
     else:
+        leftTokens = getTokens(input["Q_TRIGGER"])
         for token in leftTokens:
+            if leftTokenCount == MAX_LENGTH:
+                break
             if token not in wordVectorDict:
                 #print token + " in Question"
                 pass
@@ -217,13 +233,15 @@ def getTestTriggerVector1(input):
 def getTestTriggerVector2(input):
     entailScr = input["TRIGGER_SCORE"]
     zero_word_vec = np.zeros((300,))
-    leftTokens = getTokens(input["A_TRIGGER"])
     sentVec = []
     leftTokenCount = 0
     if math.isnan(entailScr) or entailScr == None:
         pass
     else:
+        leftTokens = getTokens(input["A_TRIGGER"])
         for token in leftTokens:
+            if leftTokenCount == MAX_LENGTH:
+                break
             if token not in wordVectorDict:
                 #print token + " in Question"
                 pass
@@ -244,13 +262,15 @@ def getTestTriggerCosineSimOutput(input):
 def getTestResultVector1(input):
     entailScr = input["RESULT_SCORE"]
     zero_word_vec = np.zeros((300,))
-    leftTokens = getTokens(input["Q_RESULT"])
     sentVec = []
     leftTokenCount = 0
     if math.isnan(entailScr) or entailScr == None:
         pass
     else:
+        leftTokens = getTokens(input["Q_RESULT"])
         for token in leftTokens:
+            if leftTokenCount == MAX_LENGTH:
+                break
             if token not in wordVectorDict:
                 #print token + " in Question"
                 pass
@@ -264,13 +284,15 @@ def getTestResultVector1(input):
 def getTestResultVector2(input):
     entailScr = input["RESULT_SCORE"]
     zero_word_vec = np.zeros((300,))
-    leftTokens = getTokens(input["A_RESULT"])
     sentVec = []
     leftTokenCount = 0
     if math.isnan(entailScr) or entailScr == None:
         pass
     else:
+        leftTokens = getTokens(input["A_RESULT"])
         for token in leftTokens:
+            if leftTokenCount == MAX_LENGTH:
+                break
             if token not in wordVectorDict:
                 #print token + " in Question"
                 pass
@@ -303,28 +325,32 @@ def formWordDictFromCsv(input):
 
 #Parses the pair of sentence. Starts the operation to convert sentence into vector of words
 def getIndependentWordsVector():
-    inputs = pd.read_csv("inputSentences.csv")
+    train_inputs = pd.read_csv("best_data.csv")
+    train_inputs = train_inputs.drop(train_inputs.columns[[0]], axis=1)
     wordVec_csv = pd.read_csv("wordVectors.csv")
     wordVec_csv = wordVec_csv.drop(wordVec_csv.columns[[0]], axis=1)
     wordVec_csv.apply(formWordDictFromCsv, axis=1)
-    inputs.apply(getTrainSentenceVector1, axis=1)
-    inputs.apply(getTrainSentenceVector2, axis=1)
-    inputs.apply(getTrainCosineSimOutput, axis=1)
-    inputs.apply(getTestUndergoerVector1, axis=1)
-    inputs.apply(getTestUndergoerVector2, axis=1)
-    inputs.apply(getTestUndergoerCosineSimOutput, axis=1)
-    inputs.apply(getTestEnablerVector1, axis=1)
-    inputs.apply(getTestEnablerVector2, axis=1)
-    inputs.apply(getTestEnablerCosineSimOutput, axis=1)
-    inputs.apply(getTestTriggerVector1, axis=1)
-    inputs.apply(getTestTriggerVector2, axis=1)
-    inputs.apply(getTestTriggerCosineSimOutput, axis=1)
-    inputs.apply(getTestResultVector1, axis=1)
-    inputs.apply(getTestResultVector2, axis=1)
-    inputs.apply(getTestResultCosineSimOutput, axis=1)
+    train_inputs.apply(getTrainSentenceVector1, axis=1)
+    train_inputs.apply(getTrainSentenceVector2, axis=1)
+    train_inputs.apply(getTrainCosineSimOutput, axis=1)
+    test_inputs = pd.read_csv("qa_data.csv")
+    test_inputs = test_inputs.drop(test_inputs.columns[[0]], axis=1)
+    test_inputs.apply(getTestUndergoerVector1, axis=1)
+    test_inputs.apply(getTestUndergoerVector2, axis=1)
+    test_inputs.apply(getTestUndergoerCosineSimOutput, axis=1)
+    test_inputs.apply(getTestEnablerVector1, axis=1)
+    test_inputs.apply(getTestEnablerVector2, axis=1)
+    test_inputs.apply(getTestEnablerCosineSimOutput, axis=1)
+    test_inputs.apply(getTestTriggerVector1, axis=1)
+    test_inputs.apply(getTestTriggerVector2, axis=1)
+    test_inputs.apply(getTestTriggerCosineSimOutput, axis=1)
+    test_inputs.apply(getTestResultVector1, axis=1)
+    test_inputs.apply(getTestResultVector2, axis=1)
+    test_inputs.apply(getTestResultCosineSimOutput, axis=1)
     
 def gen_csvdata(min_length=MIN_LENGTH, max_length=MAX_LENGTH, n_batch=N_BATCH):
     test_df = pd.read_csv("qa_data.csv")
+    test_df = test_df.drop(test_df.columns[[0]], axis=1)
     getIndependentWordsVector()
     train_len = len(train_sentenceVectors1)
     test_len = len(test_undergoerVectors1)
@@ -366,11 +392,11 @@ def gen_csvdata(min_length=MIN_LENGTH, max_length=MAX_LENGTH, n_batch=N_BATCH):
         mask_test_result_1[n,:sentence_result_len_1] = 1
         sentence_result_len_2 = len(test_resultVectors2[n])
         mask_test_result_2[n,:sentence_result_len_2] = 1 
-    
+
     return np.array(train_sentenceVectors1).astype(theano.config.floatX) , np.array(train_sentenceVectors2).astype(theano.config.floatX),\
      np.array(gold_cosine_sim_train).astype(theano.config.floatX),\
-     mask_train_1.astype(theano.config.floatX), mask_train_2.astype(theano.config.floatX) \
-     ,np.array(test_undergoerVectors1).astype(theano.config.floatX),  np.array(test_undergoerVectors2).astype(theano.config.floatX), \
+     mask_train_1.astype(theano.config.floatX), mask_train_2.astype(theano.config.floatX), \
+     np.array(test_undergoerVectors1).astype(theano.config.floatX), np.array(test_undergoerVectors2).astype(theano.config.floatX), \
     np.array(gold_undergoer_cosine_sim).astype(theano.config.floatX),\
      mask_test_undergoer_1.astype(theano.config.floatX), mask_test_undergoer_2.astype(theano.config.floatX),\
     np.array(test_triggerVectors1).astype(theano.config.floatX),  np.array(test_triggerVectors2).astype(theano.config.floatX), \
@@ -383,8 +409,25 @@ def gen_csvdata(min_length=MIN_LENGTH, max_length=MAX_LENGTH, n_batch=N_BATCH):
     np.array(gold_result_cosine_sim).astype(theano.config.floatX),\
      mask_test_result_1.astype(theano.config.floatX), mask_test_result_2.astype(theano.config.floatX),\
      test_df     
+    
 
-
+def averageFinalScore(input):
+    count = 0
+    total = 0.0
+    if input["newUndergoerScore"] != 0 :
+        total = total + input["newUndergoerScore"]
+        count = count + 1
+    if input["newEnablerScore"] != 0 :
+        total = total + input["newEnablerScore"]
+        count = count + 1
+    if input["newTriggerScore"] != 0 :
+        total = total + input["newTriggerScore"]
+        count = count + 1
+    if input["newResultScore"] != 0 :
+        total = total + input["newResultScore"]
+        count = count + 1
+        
+    return total/count
 def RNN():
     # First, we build the network, for first sentence starting with an input layer
     # Recurrent layers expect input of shape
@@ -443,7 +486,7 @@ def RNN():
                               l_mask_2.input_var], [cosine_sim], on_unused_input='warn')
     
     train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1, mask_train_2 \
-           ,test_sentence_undergoer_1,  test_sentence_undergoer_1 \
+           ,test_sentence_undergoer_1,  test_sentence_undergoer_2 \
            ,cosineSimUndergoer, mask_undergoer_test_1, mask_undergoer_test_2 \
            ,test_sentence_trigger_1,  test_sentence_trigger_2 \
            ,cosineSimTrigger, mask_trigger_test_1, mask_trigger_test_2\
@@ -459,16 +502,31 @@ def RNN():
             train(train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1,mask_train_2 )
             cost_val = compute_cost(train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1,mask_train_2 )
             print("Epoch {} validation cost = {}".format(epoch, cost_val))
-            
+            if epoch%100 == 0:
+                cosine_undergoersim = test_cosine(test_sentence_undergoer_1,  test_sentence_undergoer_2,\
+                              cosineSimUndergoer, mask_undergoer_test_1, mask_undergoer_test_2)
+                cosine_enablersim = test_cosine(test_sentence_enabler_1,  test_sentence_enabler_2,\
+                              cosineSimEnabler, mask_enabler_test_1, mask_enabler_test_2)
+                cosine_triggersim = test_cosine(test_sentence_trigger_1,  test_sentence_trigger_2,\
+                              cosineSimTrigger, mask_trigger_test_1, mask_trigger_test_2)
+                cosine_resultsim = test_cosine(test_sentence_result_1,  test_sentence_result_2,\
+                              cosineSimResult, mask_result_test_1, mask_result_test_2)
+                test_df["newUndergoerScore"] = cosine_undergoersim[0]
+                test_df["newEnablerScore"] = cosine_enablersim[0]
+                test_df["newTriggerScore"] = cosine_triggersim[0]
+                test_df["newResultScore"] = cosine_resultsim[0]
+                test_df["avgOurScore"] = test_df.apply(averageFinalScore, axis=1)
+                directory = "result/prediction/RNN/"+str(epoch)
+                if not os.path.exists(directory):
+                    os.makedirs(directory)
+                test_df.to_csv(directory+"/cosineSimilarity.csv")
         
     except KeyboardInterrupt:
         pass
     
-    cosine_sim = test_cosine(test_sentence_undergoer_1,  test_sentence_undergoer_1,\
-                              cosineSimUndergoer, mask_test_1, mask_test_2)
-    test_df["newCosineSimilarity"] = cosine_sim[0]
-    test_df.to_csv("cosineSimilariry.csv")
+    
     
 if __name__ == '__main__':
+    #gen_csvdata()
     RNN()
 

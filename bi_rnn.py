@@ -10,6 +10,7 @@ import numpy as np
 import string
 import re
 import sys
+import os
 wordList = {}
 stopwords = []
 wordName= []
@@ -36,7 +37,7 @@ wordVectorDict = {}
 sentenceVectors1 = []
 sentenceVectors2 = []
 gold_cosine_sim = []
-num_epochs = 100
+num_epochs = 10000
 def initStopWordsList():
     global stopwords
     stopwords = []
@@ -54,7 +55,7 @@ def getTokens(filetext):
        
 def getSentenceVector1(input):
     zero_word_vec = np.zeros((300,))
-    leftTokens = getTokens(input["QUESTION"])
+    leftTokens = getTokens(input["sentence1"])
     sentVec = []
     leftTokenCount = 0
     for token in leftTokens:
@@ -70,7 +71,7 @@ def getSentenceVector1(input):
     
 def getSentenceVector2(input):
     zero_word_vec = np.zeros((300,))
-    leftTokens = getTokens(input["ANSWER_SENTENCE"])
+    leftTokens = getTokens(input["sentence2"])
     sentVec = []
     leftTokenCount = 0
     for token in leftTokens:
@@ -85,7 +86,7 @@ def getSentenceVector2(input):
     sentenceVectors2.append(sentVec)
 
 def getCosineSimOutput(input): 
-    cosine_sim = input["ENT_SCORE"]
+    cosine_sim = input["entailScore"]
     gold_cosine_sim.append(cosine_sim)          
 #Form a word vector word2vec representation for each word
 def formWordDictFromCsv(input):
@@ -102,8 +103,9 @@ def formWordDictFromCsv(input):
 
 #Parses the pair of sentence. Starts the operation to convert sentence into vector of words
 def getIndependentWordsVector():
-    inputs = pd.read_csv("input.csv")
-    wordVec_csv = pd.read_csv("word_vector.csv")
+    inputs = pd.read_csv("best_data.csv")
+    inputs = inputs.drop(inputs.columns[[0]], axis=1)
+    wordVec_csv = pd.read_csv("wordVectors.csv")
     wordVec_csv = wordVec_csv.drop(wordVec_csv.columns[[0]], axis=1)
     wordVec_csv.apply(formWordDictFromCsv, axis=1)
     inputs.apply(getSentenceVector1, axis=1)
@@ -112,7 +114,8 @@ def getIndependentWordsVector():
     
     
 def gen_csvdata(min_length=MIN_LENGTH, max_length=MAX_LENGTH, n_batch=N_BATCH):
-    inputs = pd.read_csv("input.csv")
+    inputs = pd.read_csv("best_data.csv")
+    inputs = inputs.drop(inputs.columns[[0]], axis=1)
     getIndependentWordsVector()
     total_length_input = len(sentenceVectors1)
     train_len = (80*total_length_input)/100
@@ -172,7 +175,7 @@ def gen_data(min_length=MIN_LENGTH, max_length=MAX_LENGTH, n_batch=N_BATCH):
     y -= y.mean()
     return (X.astype(theano.config.floatX), y.astype(theano.config.floatX),
             mask.astype(theano.config.floatX))
-def RNN():
+def biRNN():
     # First, we build the network, for first sentence starting with an input layer
     # Recurrent layers expect input of shape
     # (batch size, max sequence length, number of features)
@@ -265,21 +268,22 @@ def RNN():
             train(train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1,mask_train_2 )
             cost_val = compute_cost(train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1,mask_train_2 )
             print("Epoch {} validation cost = {}".format(epoch, cost_val))
-            
+            if epoch%100 == 0:
+                cosine_sim = test_cosine(test_sentence_1,  test_sentence_2, cosineSimtest, mask_test_1, mask_test_2)
+                test_df["newCosineSimilarity"] = cosine_sim[0]
+                directory = "result/entailment/BiRNN/"+str(epoch)
+                if not os.path.exists(directory):
+                    os.makedirs(directory)
+                test_df.to_csv(directory+"/cosineSimilarity_birnn.csv")
         
     except KeyboardInterrupt:
-        pass
-    
-    cosine_sim = test_cosine(test_sentence_1,  test_sentence_2, cosineSimtest, mask_test_1, mask_test_2)
-    #x = pd.Series(cosine_sim[0])
-    test_df["newCosineSimilarity"] = cosine_sim[0]
-    test_df.to_csv("cosineSimilariry_birnn.csv")
+        pass    
     
 if __name__ == '__main__':
        # We'll use this "validation set" to periodically check progress
     #gen_csvdata()
    # sys.argv("THEANO_FLAGS='floatX=float32,device=gpu0,nvcc.fastmath=True,exception_verbosity=high,optimizer=fast_compile'".split())
-    RNN()
+    biRNN()
 
 
 
