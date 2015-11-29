@@ -10,6 +10,7 @@ import numpy as np
 import string
 import re
 import sys
+import os
 wordList = {}
 stopwords = []
 wordName= []
@@ -36,7 +37,7 @@ wordVectorDict = {}
 sentenceVectors1 = []
 sentenceVectors2 = []
 gold_cosine_sim = []
-num_epochs = 100
+num_epochs = 100000
 def initStopWordsList():
     global stopwords
     stopwords = []
@@ -102,7 +103,8 @@ def formWordDictFromCsv(input):
 
 #Parses the pair of sentence. Starts the operation to convert sentence into vector of words
 def getIndependentWordsVector():
-    inputs = pd.read_csv("inputSentences.csv")
+    inputs = pd.read_csv("best_data.csv")
+    inputs = inputs.drop(inputs.columns[[0]], axis=1)
     wordVec_csv = pd.read_csv("wordVectors.csv")
     wordVec_csv = wordVec_csv.drop(wordVec_csv.columns[[0]], axis=1)
     wordVec_csv.apply(formWordDictFromCsv, axis=1)
@@ -112,10 +114,11 @@ def getIndependentWordsVector():
     
     
 def gen_csvdata(min_length=MIN_LENGTH, max_length=MAX_LENGTH, n_batch=N_BATCH):
-    inputs = pd.read_csv("input.csv")
+    inputs = pd.read_csv("best_data.csv")
+    inputs = inputs.drop(inputs.columns[[0]], axis=1)
     getIndependentWordsVector()
     total_length_input = len(sentenceVectors1)
-    train_len = (80*total_length_input)/100
+    train_len = (70*total_length_input)/100
     test_len = total_length_input - train_len
     #Initialize Mask matrices
     mask_train_1 = np.zeros((train_len, max_length))
@@ -142,36 +145,11 @@ def gen_csvdata(min_length=MIN_LENGTH, max_length=MAX_LENGTH, n_batch=N_BATCH):
         sentence_len_2 = len(test_sentence_2[n])
         mask_test_2[n,:sentence_len_2] = 1       
     
-    return np.array(train_sentence_2).astype(theano.config.floatX) , np.array(train_sentence_2).astype(theano.config.floatX), np.array(cosineSimtrain).astype(theano.config.floatX),\
+    return np.array(train_sentence_1).astype(theano.config.floatX) , np.array(train_sentence_2).astype(theano.config.floatX), np.array(cosineSimtrain).astype(theano.config.floatX),\
          mask_train_1.astype(theano.config.floatX), mask_train_2.astype(theano.config.floatX) \
            ,np.array(test_sentence_1).astype(theano.config.floatX),  np.array(test_sentence_2).astype(theano.config.floatX), \
            np.array(cosineSimtest).astype(theano.config.floatX), mask_test_1.astype(theano.config.floatX), mask_test_2.astype(theano.config.floatX), test_df
 
-def gen_data(min_length=MIN_LENGTH, max_length=MAX_LENGTH, n_batch=N_BATCH):
-    # Generate X - we'll fill the last dimension later
-    X = np.concatenate([np.random.uniform(size=(n_batch, max_length, 1)),
-                        np.zeros((n_batch, max_length, 1))],
-                       axis=-1)
-    mask = np.zeros((n_batch, max_length))
-    y = np.zeros((n_batch,))
-    # Compute masks and correct values
-    for n in range(n_batch):
-        # Randomly choose the sequence length
-        length = np.random.randint(min_length, max_length)
-        # Make the mask for this sample 1 within the range of length
-        mask[n, :length] = 1
-        # Zero out X after the end of the sequence
-        X[n, length:, 0] = 0
-        # Set the second dimension to 1 at the indices to add
-        X[n, np.random.randint(length/10), 1] = 1
-        X[n, np.random.randint(length/2, length), 1] = 1
-        # Multiply and sum the dimensions of X to get the target value
-        y[n] = np.sum(X[n, :, 0]*X[n, :, 1])
-    # Center the inputs and outputs
-    X -= X.reshape(-1, 2).mean(axis=0)
-    y -= y.mean()
-    return (X.astype(theano.config.floatX), y.astype(theano.config.floatX),
-            mask.astype(theano.config.floatX))
 def RNN():
     # First, we build the network, for first sentence starting with an input layer
     # Recurrent layers expect input of shape
@@ -209,8 +187,13 @@ def RNN():
     #network_output_1 = lasagne.layers.get_output(l_out_1)
     network_output_2 =  lasagne.layers.get_output(l_out_2)
     #network_output_2 = lasagne.layers.get_output(l_out_2)
-    cost = T.mean((T.sum(network_output_1*network_output_2,axis = 1) - target_values)**2)
-    cosine_sim = T.sum(network_output_1*network_output_2,axis = 1) 
+    #cost = T.mean((T.sum(network_output_1*network_output_2,axis = 1) - target_values)**2)
+    #1 - Cosine similarity
+    mod_y_1 = T.sqrt(T.sum(T.sqr(network_output_1), 1))
+    mod_y_2 = T.sqrt(T.sum(T.sqr(network_output_2), 1))
+    cosine_sim = T.sum(T.dot(network_output_1.flatten(), network_output_2.flatten()))/(mod_y_1*mod_y_2)
+    cost = T.mean((cosine_sim - target_values)**2)
+   # cosine_sim = T.sum(network_output_1*network_output_2,axis = 1) 
     # Retrieve all parameters from the network
     all_params = lasagne.layers.get_all_params(l_out_1) + lasagne.layers.get_all_params(l_out_2)
     # Compute SGD updates for training
@@ -220,14 +203,14 @@ def RNN():
     print("Compiling functions ...")
     train = theano.function([l_in_1.input_var, l_in_2.input_var, target_values, l_mask_1.input_var,
                               l_mask_2.input_var],
-                            cost,  updates=updates, on_unused_input='warn')
+                            mod_y_1, mod_y_2, cosine_sim, cost,  updates=updates, on_unused_input='warn')
     compute_cost = theano.function(
         [l_in_1.input_var, l_in_2.input_var, target_values, l_mask_1.input_var,
                               l_mask_2.input_var], cost, on_unused_input='warn')
     
     test_cosine = theano.function(
         [l_in_1.input_var, l_in_2.input_var, target_values, l_mask_1.input_var,
-                              l_mask_2.input_var], [cosine_sim], on_unused_input='warn')
+                              l_mask_2.input_var], [cosine_sim], mod_y_1, mod_y_2, on_unused_input='warn')
     
     train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1, mask_train_2 \
            ,test_sentence_1,  test_sentence_2, cosineSimtest, mask_test_1, mask_test_2, test_df = gen_csvdata()
@@ -238,13 +221,18 @@ def RNN():
             train(train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1,mask_train_2 )
             cost_val = compute_cost(train_sentence_1, train_sentence_2, cosineSimtrain, mask_train_1,mask_train_2 )
             print("Epoch {} validation cost = {}".format(epoch, cost_val))
-            
+            if epoch%100 == 0:
+                cosine_sim = test_cosine(test_sentence_1,  test_sentence_2, cosineSimtest, mask_test_1, mask_test_2)
+                test_df["newCosineSimilarity"] = cosine_sim[0]
+                directory = "newresult/entailment/RNN/"+str(epoch)
+                if not os.path.exists(directory):
+                    os.makedirs(directory)
+                test_df.to_csv(directory+"/cosineSimilarity.csv")
         
     except KeyboardInterrupt:
         pass
     
     cosine_sim = test_cosine(test_sentence_1,  test_sentence_2, cosineSimtest, mask_test_1, mask_test_2)
-    #x = pd.Series(cosine_sim[0])
     test_df["newCosineSimilarity"] = cosine_sim[0]
     test_df.to_csv("cosineSimilariry.csv")
     
