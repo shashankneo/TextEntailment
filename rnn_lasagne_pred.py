@@ -513,10 +513,10 @@ def RNN():
                               cosineSimTrigger, mask_trigger_test_1, mask_trigger_test_2)
                 cosine_resultsim = test_cosine(test_sentence_result_1,  test_sentence_result_2,\
                               cosineSimResult, mask_result_test_1, mask_result_test_2)
-                test_df["newUndergoerScore"] = cosine_undergoersim[0]
-                test_df["newEnablerScore"] = cosine_enablersim[0]
-                test_df["newTriggerScore"] = cosine_triggersim[0]
-                test_df["newResultScore"] = cosine_resultsim[0]
+                test_df["newUndergoerScore"] = cosine_undergoersim
+                test_df["newEnablerScore"] = cosine_enablersim
+                test_df["newTriggerScore"] = cosine_triggersim
+                test_df["newResultScore"] = cosine_resultsim
                 test_df["avgOurScore"] = test_df.apply(averageFinalScore, axis=1)
                 directory = "result/prediction/RNN/"+str(epoch)
                 if not os.path.exists(directory):

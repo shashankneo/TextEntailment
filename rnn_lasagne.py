@@ -223,7 +223,7 @@ def RNN():
             print("Epoch {} validation cost = {}".format(epoch, cost_val))
             if epoch%100 == 0:
                 cosine_sim = test_cosine(test_sentence_1,  test_sentence_2, cosineSimtest, mask_test_1, mask_test_2)
-                test_df["newCosineSimilarity"] = cosine_sim[0]
+                test_df["newCosineSimilarity"] = cosine_sim
                 directory = "newresult/entailment/RNN/"+str(epoch)
                 if not os.path.exists(directory):
                     os.makedirs(directory)
