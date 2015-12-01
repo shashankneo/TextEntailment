@@ -32,6 +32,7 @@ GRAD_CLIP = 100
 EPOCH_SIZE = 100
 # Number of epochs to train the net
 NUM_EPOCHS = 50
+N_FEATURES = 300
 n_output = 1
 wordVectorDict = {}
 sentenceVectors1 = []
@@ -54,7 +55,7 @@ def getTokens(filetext):
     return tokens
        
 def getSentenceVector1(input):
-    zero_word_vec = np.zeros((300,))
+    zero_word_vec = np.zeros((N_FEATURES,))
     leftTokens = getTokens(input["sentence1"])
     sentVec = []
     leftTokenCount = 0
@@ -70,7 +71,7 @@ def getSentenceVector1(input):
     sentenceVectors1.append(sentVec)
     
 def getSentenceVector2(input):
-    zero_word_vec = np.zeros((300,))
+    zero_word_vec = np.zeros((N_FEATURES,))
     leftTokens = getTokens(input["sentence2"])
     sentVec = []
     leftTokenCount = 0
@@ -186,7 +187,7 @@ def biRNN():
     #Number of features are 300 because each word is a vector of 300 dimensions
     
    
-    l_in_1 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH, 300))
+    l_in_1 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH, N_FEATURES))
     l_mask_1 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH))
     
     l_forward_1 = lasagne.layers.RecurrentLayer(
@@ -209,7 +210,7 @@ def biRNN():
     #l_out_1 = lasagne.layers.SliceLayer(l_concat_1, -1, 1)
     #l_out_1 = lasagne.layers.DenseLayer(l_forward_1, num_units=n_output)
     
-    l_in_2 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH, 300))
+    l_in_2 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH, N_FEATURES))
     l_mask_2 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH))
     l_forward_2 = lasagne.layers.RecurrentLayer(
         l_in_2, N_HIDDEN, mask_input=l_mask_2, grad_clipping=GRAD_CLIP,

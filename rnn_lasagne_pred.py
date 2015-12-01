@@ -30,6 +30,7 @@ GRAD_CLIP = 100
 EPOCH_SIZE = 100
 # Number of epochs to train the net
 NUM_EPOCHS = 50
+N_FEATURES = 300
 n_output = 1
 wordVectorDict = {}
 train_sentenceVectors1 = []
@@ -71,7 +72,7 @@ def getTokens(filetext):
     return tokens
        
 def getTrainSentenceVector1(input):
-    zero_word_vec = np.zeros((300,))
+    zero_word_vec = np.zeros((N_FEATURES,))
     leftTokens = getTokens(input["sentence1"])
     sentVec = []
     leftTokenCount = 0
@@ -87,7 +88,7 @@ def getTrainSentenceVector1(input):
     train_sentenceVectors1.append(sentVec)
     
 def getTrainSentenceVector2(input):
-    zero_word_vec = np.zeros((300,))
+    zero_word_vec = np.zeros((N_FEATURES,))
     leftTokens = getTokens(input["sentence2"])
     sentVec = []
     leftTokenCount = 0
@@ -108,7 +109,7 @@ def getTrainCosineSimOutput(input):
 
 def getTestUndergoerVector1(input):
     entailScr = input["UNDERGOER_SCORE"]
-    zero_word_vec = np.zeros((300,))
+    zero_word_vec = np.zeros((N_FEATURES,))
     sentVec = []
     leftTokenCount = 0
     if math.isnan(entailScr) or entailScr == None:
@@ -130,7 +131,7 @@ def getTestUndergoerVector1(input):
     
 def getTestUndergoerVector2(input):
     entailScr = input["UNDERGOER_SCORE"]
-    zero_word_vec = np.zeros((300,))
+    zero_word_vec = np.zeros((N_FEATURES,))
     sentVec = []
     leftTokenCount = 0
     if math.isnan(entailScr) or entailScr == None:
@@ -159,7 +160,7 @@ def getTestUndergoerCosineSimOutput(input):
     
 def getTestEnablerVector1(input):
     entailScr = input["ENABLER_SCORE"]
-    zero_word_vec = np.zeros((300,))
+    zero_word_vec = np.zeros((N_FEATURES,))
     sentVec = []
     leftTokenCount = 0
     if math.isnan(entailScr) or entailScr == None:
@@ -181,7 +182,7 @@ def getTestEnablerVector1(input):
     
 def getTestEnablerVector2(input):
     entailScr = input["ENABLER_SCORE"]
-    zero_word_vec = np.zeros((300,))
+    zero_word_vec = np.zeros((N_FEATURES,))
     sentVec = []
     leftTokenCount = 0
     if math.isnan(entailScr) or entailScr == None:
@@ -210,7 +211,7 @@ def getTestEnablerCosineSimOutput(input):
         
 def getTestTriggerVector1(input):
     entailScr = input["TRIGGER_SCORE"]
-    zero_word_vec = np.zeros((300,))
+    zero_word_vec = np.zeros((N_FEATURES,))
     sentVec = []
     leftTokenCount = 0
     if math.isnan(entailScr) or entailScr == None:
@@ -232,7 +233,7 @@ def getTestTriggerVector1(input):
     
 def getTestTriggerVector2(input):
     entailScr = input["TRIGGER_SCORE"]
-    zero_word_vec = np.zeros((300,))
+    zero_word_vec = np.zeros((N_FEATURES,))
     sentVec = []
     leftTokenCount = 0
     if math.isnan(entailScr) or entailScr == None:
@@ -261,7 +262,7 @@ def getTestTriggerCosineSimOutput(input):
 
 def getTestResultVector1(input):
     entailScr = input["RESULT_SCORE"]
-    zero_word_vec = np.zeros((300,))
+    zero_word_vec = np.zeros((N_FEATURES,))
     sentVec = []
     leftTokenCount = 0
     if math.isnan(entailScr) or entailScr == None:
@@ -283,7 +284,7 @@ def getTestResultVector1(input):
     
 def getTestResultVector2(input):
     entailScr = input["RESULT_SCORE"]
-    zero_word_vec = np.zeros((300,))
+    zero_word_vec = np.zeros((N_FEATURES,))
     sentVec = []
     leftTokenCount = 0
     if math.isnan(entailScr) or entailScr == None:
@@ -437,7 +438,7 @@ def RNN():
     #Number of features are 300 because each word is a vector of 300 dimensions
     
     W = lasagne.init.HeUniform()
-    l_in_1 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH, 300))
+    l_in_1 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH, N_FEATURES))
     l_mask_1 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH))
     l_forward_1 = lasagne.layers.RecurrentLayer(
         l_in_1, N_HIDDEN, mask_input=l_mask_1, grad_clipping=GRAD_CLIP,
@@ -447,7 +448,7 @@ def RNN():
     l_out_1 = lasagne.layers.SliceLayer(l_forward_1, -1, 1)
     #l_out_1 = lasagne.layers.DenseLayer(l_forward_1, num_units=n_output)
     
-    l_in_2 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH, 300))
+    l_in_2 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH, N_FEATURES))
     l_mask_2 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH))
     l_forward_2 = lasagne.layers.RecurrentLayer(
         l_in_2, N_HIDDEN, mask_input=l_mask_2, grad_clipping=GRAD_CLIP,

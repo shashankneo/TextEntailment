@@ -8,10 +8,10 @@ wordList = {}
 stopwords = []
 wordName= []
 wordVec = []
-
+wordsNotPresent = {}
 
 t0 = time()
-model = word2vec.Word2Vec.load('GoogleNews-vectors-negative300.bin', binary=True)
+model = word2vec.Word2Vec.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True)
 t1 = time()
 print 'word2vec Read in '+ str(t1-t0) + ' seconds'
 def initStopWordsList():
@@ -37,7 +37,9 @@ def getIndependentWords(filetext):
                 wordName.append(word)
                 wordVec.append(model[word])
             else:
-                print word
+                if word not in wordsNotPresent:
+                    print word
+                    wordsNotPresent[word] = "done"
     pass
     
 def getIndependentWordsVector():
@@ -48,7 +50,10 @@ def getIndependentWordsVector():
     inputs["sentence2"].apply(getIndependentWords)
     columns = {"wordName":wordName ,"wordVec":wordVec}
     output = pd.DataFrame(columns)
-    output.to_csv("wordVectors.csv")
+    print "Total words present =" + str(len(wordName))
+    print "Total words missed =" + str(len(wordsNotPresent))
+    print "Word vector dimension = "+str(len(wordVec[0]))
+    #output.to_csv("wordVectors.csv")
     pass
 if __name__ == '__main__':
     #extractSentences()
