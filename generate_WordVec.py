@@ -11,7 +11,7 @@ wordVec = []
 
 
 t0 = time()
-model = word2vec.Word2Vec.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True)
+model = word2vec.Word2Vec.load('GoogleNews-vectors-negative300.bin', binary=True)
 t1 = time()
 print 'word2vec Read in '+ str(t1-t0) + ' seconds'
 def initStopWordsList():

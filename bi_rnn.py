@@ -37,7 +37,7 @@ wordVectorDict = {}
 sentenceVectors1 = []
 sentenceVectors2 = []
 gold_cosine_sim = []
-num_epochs = 10000
+num_epochs = 100000
 def initStopWordsList():
     global stopwords
     stopwords = []
@@ -274,7 +274,7 @@ def biRNN():
             if epoch%100 == 0:
                 cosine_sim = test_cosine(test_sentence_1,  test_sentence_2, cosineSimtest, mask_test_1, mask_test_2)
                 test_df["newCosineSimilarity"] = cosine_sim
-                directory = "result/entailment/BiRNN/"+str(epoch)
+                directory = "newresult/entailment/BiRNN/"+str(epoch)
                 if not os.path.exists(directory):
                     os.makedirs(directory)
                 test_df.to_csv(directory+"/cosineSimilarity_birnn.csv")

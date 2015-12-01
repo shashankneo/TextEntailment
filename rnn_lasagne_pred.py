@@ -334,7 +334,6 @@ def getIndependentWordsVector():
     train_inputs.apply(getTrainSentenceVector2, axis=1)
     train_inputs.apply(getTrainCosineSimOutput, axis=1)
     test_inputs = pd.read_csv("qa_data.csv")
-    test_inputs = test_inputs.drop(test_inputs.columns[[0]], axis=1)
     test_inputs.apply(getTestUndergoerVector1, axis=1)
     test_inputs.apply(getTestUndergoerVector2, axis=1)
     test_inputs.apply(getTestUndergoerCosineSimOutput, axis=1)
@@ -518,7 +517,7 @@ def RNN():
                 test_df["newTriggerScore"] = cosine_triggersim
                 test_df["newResultScore"] = cosine_resultsim
                 test_df["avgOurScore"] = test_df.apply(averageFinalScore, axis=1)
-                directory = "result/prediction/RNN/"+str(epoch)
+                directory = "newresult/prediction/RNN/"+str(epoch)
                 if not os.path.exists(directory):
                     os.makedirs(directory)
                 test_df.to_csv(directory+"/cosineSimilarity.csv")
