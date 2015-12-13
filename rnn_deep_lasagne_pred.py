@@ -30,7 +30,7 @@ GRAD_CLIP = 100
 EPOCH_SIZE = 100
 # Number of epochs to train the net
 NUM_EPOCHS = 50
-N_FEATURES = 300
+N_FEATURES = 200
 n_output = 1
 wordVectorDict = {}
 train_sentenceVectors1 = []
@@ -328,7 +328,7 @@ def formWordDictFromCsv(input):
 def getIndependentWordsVector():
     train_inputs = pd.read_csv("best_data.csv")
     train_inputs = train_inputs.drop(train_inputs.columns[[0]], axis=1)
-    wordVec_csv = pd.read_csv("wordVectors.csv")
+    wordVec_csv = pd.read_csv("wordVectors_phys_200.csv")
     wordVec_csv = wordVec_csv.drop(wordVec_csv.columns[[0]], axis=1)
     wordVec_csv.apply(formWordDictFromCsv, axis=1)
     train_inputs.apply(getTrainSentenceVector1, axis=1)
@@ -445,12 +445,17 @@ def RNN():
         W_in_to_hid=W,
         W_hid_to_hid=lasagne.init.HeUniform(),
         nonlinearity=lasagne.nonlinearities.tanh)
-    l_forward_second_1 = lasagne.layers.RecurrentLayer(
+    l_forward_2_1 = lasagne.layers.RecurrentLayer(
         l_forward_1, N_HIDDEN, mask_input=l_mask_1, grad_clipping=GRAD_CLIP,
         W_in_to_hid=W,
         W_hid_to_hid=lasagne.init.HeUniform(),
         nonlinearity=lasagne.nonlinearities.tanh)
-    l_out_1 = lasagne.layers.SliceLayer(l_forward_second_1, -1, 1)
+#     l_forward_3_1 = lasagne.layers.RecurrentLayer(
+#         l_forward_2_1, N_HIDDEN, mask_input=l_mask_1, grad_clipping=GRAD_CLIP,
+#         W_in_to_hid=W,
+#         W_hid_to_hid=lasagne.init.HeUniform(),
+#         nonlinearity=lasagne.nonlinearities.tanh)
+    l_out_1 = lasagne.layers.SliceLayer(l_forward_2_1, -1, 1)
     #l_out_1 = lasagne.layers.DenseLayer(l_forward_1, num_units=n_output)
     
     l_in_2 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH, N_FEATURES))
@@ -460,12 +465,17 @@ def RNN():
         W_in_to_hid=lasagne.init.HeUniform(),
         W_hid_to_hid=lasagne.init.HeUniform(),
         nonlinearity=lasagne.nonlinearities.tanh)
-    l_forward_second_2 = lasagne.layers.RecurrentLayer(
+    l_forward_2_2 = lasagne.layers.RecurrentLayer(
         l_forward_2, N_HIDDEN, mask_input=l_mask_2, grad_clipping=GRAD_CLIP,
         W_in_to_hid=lasagne.init.HeUniform(),
         W_hid_to_hid=lasagne.init.HeUniform(),
         nonlinearity=lasagne.nonlinearities.tanh)
-    l_out_2 = lasagne.layers.SliceLayer(l_forward_second_2, -1, 1)
+#     l_forward_3_2 = lasagne.layers.RecurrentLayer(
+#         l_forward_2_2, N_HIDDEN, mask_input=l_mask_2, grad_clipping=GRAD_CLIP,
+#         W_in_to_hid=lasagne.init.HeUniform(),
+#         W_hid_to_hid=lasagne.init.HeUniform(),
+#         nonlinearity=lasagne.nonlinearities.tanh)
+    l_out_2 = lasagne.layers.SliceLayer(l_forward_2_2, -1, 1)
     #l_out_2 = lasagne.layers.DenseLayer(l_forward_2, num_units=n_output)
     
     #target cosine similarity of the pair of sentence
@@ -528,7 +538,7 @@ def RNN():
                 test_df["newTriggerScore"] = cosine_triggersim
                 test_df["newResultScore"] = cosine_resultsim
                 test_df["avgOurScore"] = test_df.apply(averageFinalScore, axis=1)
-                directory = "newresult/prediction/RNN/"+str(epoch)
+                directory = "newresult/prediction/deep2RNNphys_wordvec200/"+str(epoch)
                 if not os.path.exists(directory):
                     os.makedirs(directory)
                 test_df.to_csv(directory+"/cosineSimilarity.csv")

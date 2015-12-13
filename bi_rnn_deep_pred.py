@@ -30,7 +30,7 @@ GRAD_CLIP = 100
 EPOCH_SIZE = 100
 # Number of epochs to train the net
 NUM_EPOCHS = 50
-N_FEATURES = 300
+N_FEATURES = 100
 n_output = 1
 wordVectorDict = {}
 train_sentenceVectors1 = []
@@ -328,7 +328,7 @@ def formWordDictFromCsv(input):
 def getIndependentWordsVector():
     train_inputs = pd.read_csv("best_data.csv")
     train_inputs = train_inputs.drop(train_inputs.columns[[0]], axis=1)
-    wordVec_csv = pd.read_csv("wordVectors.csv")
+    wordVec_csv = pd.read_csv("wordVectors_phys.csv")
     wordVec_csv = wordVec_csv.drop(wordVec_csv.columns[[0]], axis=1)
     wordVec_csv.apply(formWordDictFromCsv, axis=1)
     train_inputs.apply(getTrainSentenceVector1, axis=1)
@@ -568,7 +568,7 @@ def biRNN():
                 test_df["newTriggerScore"] = cosine_triggersim
                 test_df["newResultScore"] = cosine_resultsim
                 test_df["avgOurScore"] = test_df.apply(averageFinalScore, axis=1)
-                directory = "newresult/prediction/biRNN/"+str(epoch)
+                directory = "newresult/prediction/deepbiRNNphys/"+str(epoch)
                 if not os.path.exists(directory):
                     os.makedirs(directory)
                 test_df.to_csv(directory+"/cosineSimilarity.csv")

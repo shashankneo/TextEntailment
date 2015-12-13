@@ -10,7 +10,7 @@ stopwords = []
 wordName= []
 wordVec = []
 wordsNotPresent = {}
-
+WORD_VEC_SIZE = 75
 
 model = None
 
@@ -37,6 +37,7 @@ def getIndependentWords(filetext):
                 wordList[word] = "done"
                 wordName.append(word)
                 wordVec.append(model[word])
+                print word +" = "+model.most_similar(positive = [word])
             else:
                 if word not in wordsNotPresent:
                     print word
@@ -51,7 +52,7 @@ def getIndependentWordsVector():
     inputs["sentence2"].apply(getIndependentWords)
     columns = {"wordName":wordName ,"wordVec":wordVec}
     output = pd.DataFrame(columns)
-    output.to_csv("wordVectors_phys.csv")
+    output.to_csv("wordVectors_phys_"+str(WORD_VEC_SIZE)+".csv")
     pass
 
 sentenceList = []
@@ -63,7 +64,7 @@ def extractSentencesFromPhysical():
     inputs = pd.read_csv("filtered_sentences.csv")
     inputs["FILTERED_SENTENCE"].apply(extractSentences)
     t0 = time()
-    model = gensim.models.Word2Vec(sentenceList, min_count=0)
+    model = gensim.models.Word2Vec(sentenceList, size=WORD_VEC_SIZE, min_count=0)
     t1 = time()
     print 'word2vec Read in '+ str(t1-t0) + ' seconds'
     getIndependentWordsVector()

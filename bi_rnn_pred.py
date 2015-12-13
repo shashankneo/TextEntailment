@@ -407,7 +407,7 @@ def gen_csvdata(min_length=MIN_LENGTH, max_length=MAX_LENGTH, n_batch=N_BATCH):
      np.array(test_resultVectors1).astype(theano.config.floatX),  np.array(test_resultVectors2).astype(theano.config.floatX), \
     np.array(gold_result_cosine_sim).astype(theano.config.floatX),\
      mask_test_result_1.astype(theano.config.floatX), mask_test_result_2.astype(theano.config.floatX),\
-     test_df     
+     test_df
     
 
 def averageFinalScore(input):
@@ -427,7 +427,7 @@ def averageFinalScore(input):
         count = count + 1
         
     return total/count
-def RNN():
+def biRNN():
     # First, we build the network, for first sentence starting with an input layer
     # Recurrent layers expect input of shape
     # (batch size, max sequence length, number of features)
@@ -437,15 +437,28 @@ def RNN():
     #upon the input length so lets give it as None
     #Number of features are 300 because each word is a vector of 300 dimensions
     
-    W = lasagne.init.HeUniform()
+   
     l_in_1 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH, N_FEATURES))
     l_mask_1 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH))
+    
     l_forward_1 = lasagne.layers.RecurrentLayer(
         l_in_1, N_HIDDEN, mask_input=l_mask_1, grad_clipping=GRAD_CLIP,
-        W_in_to_hid=W,
+        W_in_to_hid=lasagne.init.HeUniform(),
         W_hid_to_hid=lasagne.init.HeUniform(),
         nonlinearity=lasagne.nonlinearities.tanh)
-    l_out_1 = lasagne.layers.SliceLayer(l_forward_1, -1, 1)
+    l_backward_1 = lasagne.layers.RecurrentLayer(
+        l_in_1, N_HIDDEN, mask_input=l_mask_1, grad_clipping=GRAD_CLIP,
+        W_in_to_hid=lasagne.init.HeUniform(),
+        W_hid_to_hid=lasagne.init.HeUniform(),
+        nonlinearity=lasagne.nonlinearities.tanh,
+        backwards=True)
+    l_forward_1_slice = lasagne.layers.SliceLayer(l_forward_1, -1, 1)
+    l_backward_1_slice = lasagne.layers.SliceLayer(l_backward_1, 0, 1)
+    # Now, we'll concatenate the outputs to combine them.
+    l_out_1 = lasagne.layers.ConcatLayer([l_forward_1_slice, l_backward_1_slice])
+    # Our output layer is a simple dense connection, with 1 output unit
+   
+    #l_out_1 = lasagne.layers.SliceLayer(l_concat_1, -1, 1)
     #l_out_1 = lasagne.layers.DenseLayer(l_forward_1, num_units=n_output)
     
     l_in_2 = lasagne.layers.InputLayer(shape=(None, MAX_LENGTH, N_FEATURES))
@@ -455,7 +468,21 @@ def RNN():
         W_in_to_hid=lasagne.init.HeUniform(),
         W_hid_to_hid=lasagne.init.HeUniform(),
         nonlinearity=lasagne.nonlinearities.tanh)
-    l_out_2 = lasagne.layers.SliceLayer(l_forward_2, -1, 1)
+    
+    
+    l_backward_2 = lasagne.layers.RecurrentLayer(
+        l_in_2, N_HIDDEN, mask_input=l_mask_2, grad_clipping=GRAD_CLIP,
+        W_in_to_hid=lasagne.init.HeUniform(),
+        W_hid_to_hid=lasagne.init.HeUniform(),
+        nonlinearity=lasagne.nonlinearities.tanh,
+        backwards=True)
+    l_forward_2_slice = lasagne.layers.SliceLayer(l_forward_2, -1, 1)
+    l_backward_2_slice = lasagne.layers.SliceLayer(l_backward_2, 0, 1)
+    # Now, we'll concatenate the outputs to combine them.
+    l_out_2 = lasagne.layers.ConcatLayer([l_forward_2_slice, l_backward_2_slice])
+    # Our output layer is a simple dense connection, with 1 output unit
+   
+    #l_out_2 = lasagne.layers.SliceLayer(l_concat_2, -1, 1)
     #l_out_2 = lasagne.layers.DenseLayer(l_forward_2, num_units=n_output)
     
     #target cosine similarity of the pair of sentence
@@ -518,17 +545,20 @@ def RNN():
                 test_df["newTriggerScore"] = cosine_triggersim
                 test_df["newResultScore"] = cosine_resultsim
                 test_df["avgOurScore"] = test_df.apply(averageFinalScore, axis=1)
-                directory = "newresult/prediction/physRNN/"+str(epoch)
+                directory = "newresult/prediction/biRNNphys/"+str(epoch)
                 if not os.path.exists(directory):
                     os.makedirs(directory)
                 test_df.to_csv(directory+"/cosineSimilarity.csv")
         
     except KeyboardInterrupt:
-        pass
-    
-    
+        pass    
     
 if __name__ == '__main__':
+       # We'll use this "validation set" to periodically check progress
     #gen_csvdata()
-    RNN()
+   # sys.argv("THEANO_FLAGS='floatX=float32,device=gpu0,nvcc.fastmath=True,exception_verbosity=high,optimizer=fast_compile'".split())
+    biRNN()
+
+
+
 

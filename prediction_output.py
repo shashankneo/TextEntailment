@@ -18,7 +18,11 @@ def calculatePrecision(inputs):
         theirPrecision = theirPrecision + 1 
 
 def getResult():
-    results = pd.read_csv("/Users/neocfc/Documents/workspace/CompLing/RNN/newresult/prediction/biRNN/50000/cosineSimilarity.csv")
+    best_data = pd.read_csv("qa_data.csv")
+    #best_data = best_data.drop(best_data.columns[[0]], axis=1) 
+    
+    results = pd.read_csv("/Users/neocfc/Documents/workspace/CompLing/RNN/newresult/prediction/deep2RNNphys_wordvec200/700/cosineSimilarity.csv")
+    results['QUESTION'] = best_data['QUESTION']
     results = results.drop(results.columns[[0]], axis=1)
     final_output = results.groupby('QUESTION').apply(lambda t: t[t.avgOurScore==t.avgOurScore.max()])
     final_output.apply(calculatePrecision, axis=1)

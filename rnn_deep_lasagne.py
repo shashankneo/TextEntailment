@@ -22,7 +22,7 @@ MIN_LENGTH = 50
 MAX_LENGTH = 50
 # Number of units in the hidden (recurrent) layer
 N_HIDDEN = 50
-N_FEATURES = 300
+N_FEATURES = 100
 # Number of training sequences in each batch
 N_BATCH = 100
 # Optimization learning rate
@@ -106,7 +106,7 @@ def formWordDictFromCsv(input):
 def getIndependentWordsVector():
     inputs = pd.read_csv("best_data.csv")
     inputs = inputs.drop(inputs.columns[[0]], axis=1)
-    wordVec_csv = pd.read_csv("wordVectors.csv")
+    wordVec_csv = pd.read_csv("wordVectors_phys.csv")
     wordVec_csv = wordVec_csv.drop(wordVec_csv.columns[[0]], axis=1)
     wordVec_csv.apply(formWordDictFromCsv, axis=1)
     inputs.apply(getSentenceVector1, axis=1)
@@ -235,7 +235,7 @@ def RNN():
             if epoch%100 == 0:
                 cosine_sim = test_cosine(test_sentence_1,  test_sentence_2, cosineSimtest, mask_test_1, mask_test_2)
                 test_df["newCosineSimilarity"] = cosine_sim
-                directory = "newresult/entailment/RNN/"+str(epoch)
+                directory = "newresult/entailment/deepRNN/phys"+str(epoch)
                 if not os.path.exists(directory):
                     os.makedirs(directory)
                 test_df.to_csv(directory+"/cosineSimilarity.csv")

@@ -106,7 +106,7 @@ def formWordDictFromCsv(input):
 def getIndependentWordsVector():
     inputs = pd.read_csv("best_data.csv")
     inputs = inputs.drop(inputs.columns[[0]], axis=1)
-    wordVec_csv = pd.read_csv("wordVectors.csv")
+    wordVec_csv = pd.read_csv("wordVectors_phys.csv")
     wordVec_csv = wordVec_csv.drop(wordVec_csv.columns[[0]], axis=1)
     wordVec_csv.apply(formWordDictFromCsv, axis=1)
     inputs.apply(getSentenceVector1, axis=1)
